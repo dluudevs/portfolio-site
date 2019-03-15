@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Derek Luu | Front-End Developer</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+    <style>
+        html {
+            /* background: red; */
+        }
+
+        .skills_icon {
+            width: 10%;
+        }
+
+        .skills_icon img {
+            width: 100%;
+        }
+    </style>
+    
+</head>
+<body>
+    <header id="home">
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li><a href="#home"></a>Home</li>
+                    <li><a href="#about"></a>About</li>
+                    <li><a href="#skills"></a>Skills</li>
+                    <li><a href="#portfolio"></a>Portfolio</li>
+                    <li><a href="#contact"></a>Contact</li>
+                </ul>
+            </nav>
+            <div class="intro">
+                <h1><span class="hello">I am </span>Derek Luu</h1>
+                <h2>Front-End Developer</h2>
+                <button><a href="#contact">Contact Me</a></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="wrapper">
+                <h2>About me</h2>
+                <div class="about_container">
+                    <div class="about_pic">
+                        <img src="https://picsum.photos/300/400/?random" alt="">
+                    </div>
+                    <div class="about_text">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam reiciendis, adipisci deleniti quo nobis earum at inventore expedita ex, tempora exercitationem rerum laudantium sint? Officia nemo architecto quaerat inventore exercitationem veritatis, nihil veniam deserunt sapiente ex accusantium tenetur quasi laboriosam? Exercitationem ab libero, quo enim maiores itaque officiis corrupti id! Quod consequatur porro, a maiores animi quae nihil aut voluptatum fuga dolorum. Eveniet doloribus ducimus ea nobis alias recusandae! Eaque dolores quam ratione id illo magni consequuntur necessitatibus veritatis.</p>
+                        <button><a href="#">Download CV</a></button>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+        <section id="skills">
+            <div class="wrapper">
+                <h2>Skills</h2>
+                <div class="skill_container grid">
+                    <div class="skills_icon"><img src="assets/html-logo.png" alt="html logo"></div>
+                    <div class="skills_icon"><img src="assets/css-logo.png" alt="css logo"></div>
+                    <div class="skills_icon"><img src="assets/sass-logo.png" alt="sass logo"></div>
+                    <div class="skills_icon"><img src="assets/javascript-logo.png" alt="javascript logo"></div>
+                    <div class="skills_icon"><img src="assets/jquery-logo.png" alt="jquery logo"></div>
+                    <div class="skills_icon"><img src="assets/react-logo.png" alt="react logo"></div>
+                    <div class="skills_icon"><img src="assets/firebase-logo.png" alt="firebase logo"></div>
+                    <div class="skills_icon"><img src="assets/github-logo.png" alt="github logo"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="wrapper">
+
+                <div class="project_container">
+                    <div class="project_imgContainer">
+                        <img src="https://picsum.photos/300/400/?random" alt="">
+                    </div>
+                    <div class="project_textContainer">
+                        <h3>Project 1</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, blanditiis! Iure magnam et culpa possimus reiciendis consequuntur deserunt, laborum asperiores!</p>
+                        <p>Skill1 / Skill2 / Skill3</p>
+                    </div>
+                </div>
+
+                <div class="project_container">
+                    <div class="project_imgContainer">
+                        <img src="https://picsum.photos/300/400/?random" alt="">
+                    </div>
+                    <div class="project_textContainer">
+                        <h3>Project 2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odio asperiores consectetur, nihil quisquam qui suscipit perspiciatis obcaecati laudantium quae!</p>
+                        <p>Skill1 / Skill2 / Skill3 / SKill4 / Skill5 / Skill6</p>
+                    </div>
+                </div>
+
+                <div class="project_container">
+                    <div class="project_imgContainer">
+                        <img src="https://picsum.photos/300/400/?random" alt="">
+                    </div>
+                    <div class="project_textContainer">
+                        <h3>Project 3</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed sapiente, blanditiis laboriosam dolor ea enim recusandae velit eaque culpa maxime?</p>
+                        <p>Skill1 / Skill2</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="wrapper">
+                <h2>Contact</h2>
+                <form action="">
+                    <label class="visuallyHidden" for="name">Name:</label>
+                    <input required type="text" id="name" placeholder="Name" name="name">
+                    <label class="visuallyHidden" for="email">Email:</label>
+                    <input required type="email" id="email" placeholder="Email" name="email">
+                    <label for="message" class="visuallyHidden">Message:</label>
+                    <textarea name="messsage" id="message" cols="60" rows="5"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <p>Made by Derek Luu &copy; 2019 </p>
+        </div>
+    </footer>
+</body>
+</html>
