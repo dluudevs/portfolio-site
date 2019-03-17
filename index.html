@@ -5,39 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Derek Luu | Front-End Developer</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
-    <style>
-        html {
-            /* background: red; */
-        }
-
-        .skills_icon {
-            width: 10%;
-        }
-
-        .skills_icon img {
-            width: 100%;
-        }
-    </style>
-    
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <header id="home">
         <div class="wrapper">
-            <nav>
-                <ul>
+            <nav class="clearfix">
+                <ul class="nav_list">
                     <li><a href="#home"></a>Home</li>
                     <li><a href="#about"></a>About</li>
                     <li><a href="#skills"></a>Skills</li>
                     <li><a href="#portfolio"></a>Portfolio</li>
                     <li><a href="#contact"></a>Contact</li>
                 </ul>
+                <button class="hamburger hamburger__spring" type="button" aria-label="menu" aria-controls="navigation">
+                    <span class="hamburger_box">
+                        <span class="hamburger_inner"></span>
+                    </span>
+                </button>
             </nav>
-            <div class="intro">
-                <h1><span class="hello">I am </span>Derek Luu</h1>
-                <h2>Front-End Developer</h2>
-                <button><a href="#contact">Contact Me</a></button>
+        </div>
+        <div class="fullbleed">
+            <div class="wrapper">
+                <div class="intro">
+                    <h1><span class="hello">I am </span>Derek Luu </h1>
+                    <span class="dev-life">Web Developer</span>
+                </div>
             </div>
         </div>
     </header>
@@ -117,12 +112,12 @@
             <div class="wrapper">
                 <h2>Contact</h2>
                 <form action="">
-                    <label class="visuallyHidden" for="name">Name:</label>
+                    <label class="visuallyhidden" for="name">Name:</label>
                     <input required type="text" id="name" placeholder="Name" name="name">
-                    <label class="visuallyHidden" for="email">Email:</label>
+                    <label class="visuallyhidden" for="email">Email:</label>
                     <input required type="email" id="email" placeholder="Email" name="email">
-                    <label for="message" class="visuallyHidden">Message:</label>
-                    <textarea name="messsage" id="message" cols="60" rows="5"></textarea>
+                    <label for="message" class="visuallyhidden">Message:</label>
+                    <textarea name="messsage" id="message" cols="30" rows="5"></textarea>
                     <button type="submit">Send</button>
                 </form>
             </div>
@@ -133,5 +128,30 @@
             <p>Made by Derek Luu &copy; 2019 </p>
         </div>
     </footer>
+
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <script src='scripts/jquery.transit.js'></script>
+    <!-- jquery library for easier animations -->
+    <script>
+    $(document).ready(function (){
+        $('.hamburger').on('click', function(){
+            $(this).toggleClass('is_active');
+            toggleMobileMenu();
+        })
+    }) 
+    
+    const toggleMobileMenu = () => {
+        if (!$('.nav_list').hasClass('nav_mobile')){
+            $('.nav_list').addClass('nav_mobile');
+            $('.nav_mobile').transition({ x: '90%', opacity: 1}, 500);
+        } else if ($('.nav_list').hasClass('nav_mobile')){
+            $('.nav_mobile').transition({ x: '190%', opacity: 0}, 500, () => {
+                $('.nav_list').removeClass('nav_mobile');
+            });
+            //must pass in callback function to remove class otherwise remove class will negate the animation
+        }
+    }
+
+    </script>
 </body>
 </html>
