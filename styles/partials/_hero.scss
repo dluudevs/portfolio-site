@@ -23,8 +23,10 @@ nav {
     width: 50%;
     position: absolute;
     background: #fff;
-    opacity: 0;
+    z-index: 20;
     transform: translateX(190%);
+    opacity: 0;
+
 }
 
 .nav_mobile li {
@@ -32,6 +34,7 @@ nav {
     border: 1px solid $text-color;
     padding: 6.5px 0 6.5px 10px;
 }
+
 
 .hamburger {
     padding-top: 1.25vh;    
@@ -44,7 +47,7 @@ nav {
 .fullbleed {
     height: 90vh;
     padding-top: 35vh;
-    background-image: url('../../assets/ales-nesetril-734016-unsplash.jpg');
+    background-image: url('../assets/ales-nesetril-734016-unsplash.jpg');
     background-size: cover;
     background-position-x: 17.8%;
     margin-bottom: 3.35vh;
