@@ -1,0 +1,122 @@
+header li {
+    display: inline-block;
+}
+
+nav {
+    height: 6.65vh;
+}
+
+
+.nav_list {
+    position: absolute;
+    z-index: 10;
+    // transform: translateX(100%);
+}
+
+.nav_list li {
+    display: none;
+}
+
+//toggle nav bar
+.nav_mobile {
+    padding-left: 0;
+    width: 50%;
+    position: absolute;
+    background: #fff;
+    opacity: 0;
+    transform: translateX(190%);
+}
+
+.nav_mobile li {
+    display: block;
+    border: 1px solid $text-color;
+    padding: 6.5px 0 6.5px 10px;
+}
+
+.hamburger {
+    padding-top: 1.25vh;    
+    float: right;
+    position: relative;
+    z-index: 20;
+    // sit on top of the overlay
+}
+
+.fullbleed {
+    height: 90vh;
+    padding-top: 35vh;
+    background-image: url('../../assets/ales-nesetril-734016-unsplash.jpg');
+    background-size: cover;
+    background-position-x: 17.8%;
+    margin-bottom: 3.35vh;
+}
+
+.fullbleed::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    z-index: 10;
+    margin-top: 6.65vh;
+    background: rgba(158, 156, 156, 0.2);
+}
+
+.intro {
+    color: #fff;
+}
+
+.intro h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 2.85rem;
+    letter-spacing: 0.35rem;
+    text-align: center;
+    position: relative;
+    color: #fff;
+}
+
+.hello,
+.dev-life {
+    display: block;
+    font-size: 1rem;
+    line-height: 0.2;
+    font-weight: 500;
+}
+
+.hello {
+    text-transform: none;
+    letter-spacing: 0;
+    text-align: left;
+    letter-spacing: 0.15rem;
+}
+
+.hello::after {
+    content:'';
+    height: 5px;
+    width: 8%;
+    background-color: $accent-color;
+    position: absolute;
+    margin-left: 2.5%;
+}
+
+.dev-life {
+    margin: 0;
+    letter-spacing: 0.175rem;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.dev-life::before {
+    content:'';
+    height: 5px;
+    width: 8%;
+    background-color: $accent-color;
+    position: absolute;
+    margin-left: -11.5%;
+}
+
+.intro button { 
+    margin: 10% auto 0 auto;
+}
+

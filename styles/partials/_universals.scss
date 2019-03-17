@@ -1,0 +1,57 @@
+//Variables
+
+$accent-color: #ff4757;
+$hero-text-color: #ffffff;
+$text-color: #9e9c9c;
+$title-color: #2b2b2b;
+
+html {
+    font-family: 'Poppins', sans-serif;
+    color: $text-color;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    color: $title-color;
+}
+
+ul {
+    margin: 0;
+}
+
+.hero_button {
+    width: 100%;
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+section {
+    padding: 1px;
+}
+
+section h2 {
+    text-transform: uppercase;
+}
+
+button {
+    border: none;
+    background-color: $accent-color;
+    color: #ffffff;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+}
+
+textarea, input[type="text"], input[type="email"] {
+    width: 100%;
+}
+
+
