@@ -1,0 +1,44 @@
+.skills h2 {
+    position: relative;
+    margin: 8% 0;
+
+    &:before {
+        @include accent-line (1.5rem);
+    }
+}
+
+.skill_container {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill_icon {
+
+    display: inline-block;
+    flex-basis: 20%;
+    margin-bottom: 10%;
+    margin-right: 10%;
+
+    .icon {
+        font-size: 3rem;
+        color: $accent-color;
+    }
+    
+    
+    .firebase {
+        display: block;
+        width: 100%;
+    }
+
+}
+
+.skill_icon:nth-child(3n + 3){
+    margin-right: 0;
+}
+
+.skill_icon:nth-child(n + 6){
+    margin-bottom: 0;
+}
+

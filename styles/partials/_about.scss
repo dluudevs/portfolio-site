@@ -1,0 +1,43 @@
+
+.about h2 {
+    padding-top: 1px;
+    position: relative;
+    margin-bottom: 8%;
+    margin-top: 12.5%;
+
+    &::after {
+      @include accent-line (1.5rem);
+    }
+}
+
+.about_text p:first-of-type {
+    margin-top: 12.5%;
+}
+
+.about_text p:last-of-type {
+    margin-bottom: 0;
+}
+
+.about_pic {
+    height: 180px;
+    margin: 0 auto;
+    width: 180px;
+    overflow: hidden;
+    display: block;
+    border-radius: 50%;
+    @include box-shadow(0, 0, 10px, 0.6);
+    
+    img {
+        width: 100%;
+        display: block;
+    }
+
+}
+
+.button_cv {
+    margin: 10% auto 0 auto;
+}
+
+.accent-font {
+    font-weight: 500;
+}

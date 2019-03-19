@@ -1,0 +1,73 @@
+.contact {
+
+    h2 {
+        margin: 8% 0;
+        position: relative;
+    }
+
+    h2:after {
+        @include accent-line(1.5rem);
+    }
+
+    form {
+        font-size: 0.9rem;
+    
+        input, textarea {
+            padding-left: 2.5%;
+            border: 1px solid rgb(277, 277, 277);
+            transition: border 0.25s;
+        }
+
+        input:focus, textarea:focus{
+            border-color: $accent-color;
+        }
+    
+        input::placeholder,
+        textarea::placeholder {
+            font-size: 0.8rem;
+        }
+
+        input[type=text]{
+            margin-bottom: 3%;
+        }
+
+        input[type=email]{
+            margin-bottom: 5.5%;
+        }
+
+        textarea {
+            margin-bottom: 5.5%;
+        }
+
+        button {
+            width: 80px;
+            margin-bottom: 5.5%;
+        }
+    
+    }
+
+    .contact_icons {
+
+        div {
+            display: inline-block;
+            margin-right: 4%;
+            margin-bottom: 0;
+        }
+
+        i{
+            font-size: 1.25rem;
+            margin-right: 2.75%;
+            transition: color 0.25s;
+        }
+
+        i:hover {
+            color: $accent-color;
+        }
+
+        p {
+            margin: 0;
+            display: none;
+        }
+    }
+   
+}

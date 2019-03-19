@@ -4,14 +4,31 @@ $accent-color: #ff4757;
 $hero-text-color: #ffffff;
 $text-color: #9e9c9c;
 $title-color: #2b2b2b;
+$secondary-color: #a8a8a8;
+
+@mixin box-shadow ($x, $y, $spread, $alpha) {
+    box-shadow: $x $y $spread rgba(168, 168, 168, $alpha);
+}
+
+@mixin accent-line ($width){
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: $width;
+    height: 3px;
+    display: block;
+    background-color: $accent-color;
+}
 
 html {
     font-family: 'Poppins', sans-serif;
     color: $text-color;
+    overflow-x: hidden;
 }
 
 .wrapper {
-    width: 90%;
+    width: 77%;
     margin: 0 auto;
 }
 
@@ -24,9 +41,8 @@ ul {
     margin: 0;
 }
 
-.hero_button {
-    width: 100%;
-    text-align: center;
+p, li {
+    font-size: 0.9rem;
 }
 
 img {
@@ -42,16 +58,28 @@ section h2 {
     text-transform: uppercase;
 }
 
-button {
-    border: none;
-    background-color: $accent-color;
-    color: #ffffff;
-    padding: 5px 10px;
-    font-size: 0.9rem;
-}
-
 textarea, input[type="text"], input[type="email"] {
     width: 100%;
 }
 
+button {
+    display: block;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    color: #ffffff;
+    background-color: $accent-color;
+    border-radius: 10px;
+    transition: all 0.25s
+}
+
+.button:hover {
+    border: 1px solid $accent-color;
+    background-color: #fff;
+    color: $accent-color;
+}
+
+.accent-font {
+    color: $accent-color;
+}
 

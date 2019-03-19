@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Derek Luu | Front-End Developer</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -38,77 +40,112 @@
     </header>
 
     <main>
-        <section id="about">
+        <section id="about" class="about">
             <div class="wrapper">
                 <h2>About me</h2>
                 <div class="about_container">
                     <div class="about_pic">
-                        <img src="https://picsum.photos/300/400/?random" alt="">
+                        <img src="assets/headshot.png" alt="headshot of Derek Luu">
                     </div>
                     <div class="about_text">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam reiciendis, adipisci deleniti quo nobis earum at inventore expedita ex, tempora exercitationem rerum laudantium sint? Officia nemo architecto quaerat inventore exercitationem veritatis, nihil veniam deserunt sapiente ex accusantium tenetur quasi laboriosam? Exercitationem ab libero, quo enim maiores itaque officiis corrupti id! Quod consequatur porro, a maiores animi quae nihil aut voluptatum fuga dolorum. Eveniet doloribus ducimus ea nobis alias recusandae! Eaque dolores quam ratione id illo magni consequuntur necessitatibus veritatis.</p>
-                        <button><a href="#">Download CV</a></button>
+                        <p>Hi! I'm <span class="accent-font">Derek</span> a web developer from Toronto, Ontario. After picking up coding as a hobby I fell deeply in love with solving intricate problems in the digital realm. </p>
+                        <p>When I am not learning new code, I enjoy reading, trying new recipes and hanging out with friends. I am also the proud of owner of a very outspoken chihuahua!</p>
+                        <button class="button button_cv"><a href="#">Download CV</a></button>
                     </div>
                 </div>
             </div>
             </section>
 
-        <section id="skills">
+        <section id="skills" class="skills">
             <div class="wrapper">
                 <h2>Skills</h2>
-                <div class="skill_container grid">
-                    <div class="skills_icon"><img src="assets/html-logo.png" alt="html logo"></div>
-                    <div class="skills_icon"><img src="assets/css-logo.png" alt="css logo"></div>
-                    <div class="skills_icon"><img src="assets/sass-logo.png" alt="sass logo"></div>
-                    <div class="skills_icon"><img src="assets/javascript-logo.png" alt="javascript logo"></div>
-                    <div class="skills_icon"><img src="assets/jquery-logo.png" alt="jquery logo"></div>
-                    <div class="skills_icon"><img src="assets/react-logo.png" alt="react logo"></div>
-                    <div class="skills_icon"><img src="assets/firebase-logo.png" alt="firebase logo"></div>
-                    <div class="skills_icon"><img src="assets/github-logo.png" alt="github logo"></div>
-                </div>
+                <ul class="skill_container">
+                    <li class="skill_icon">
+                        <i class="icon devicon-html5-plain colored"></i>
+                    </li>
+                    <li class="skill_icon">
+                        <i class="icon devicon-css3-plain colored"></i>
+                    </li>
+                    <li class="skill_icon">
+                        <i class="icon devicon-sass-original colored"></i>
+                    </li>
+                    <li class="skill_icon">
+                        <i class="icon devicon-javascript-plain colored"></i>
+                    </li>
+                    <li class="skill_icon">
+                        <i class="icon devicon-jquery-plain colored"></i>
+                    </li>
+                    <li class="skill_icon">
+                        <i class="icon devicon-react-original colored"></i>
+                    </li>
+                    <li class="skill_icon">
+                        <i class="icon devicon-git-plain colored"></i>
+                    </li>
+                    <li class="skill_icon">
+                        <i class="icon devicon-github-plain colored"></i>
+                    </li>
+                    <li class="skill_icon">
+                        <img src="assets/firebase.svg" alt="firebase logo">
+                    </li>
+                </ul>
             </div>
         </section>
 
-        <section id="portfolio">
+        <section id="portfolio" class="portfolio">
             <div class="wrapper">
+                <h2>Portfolio</h2>
 
-                <div class="project_container">
-                    <div class="project_imgContainer">
-                        <img src="https://picsum.photos/300/400/?random" alt="">
-                    </div>
+                <div class="project1 project_container">
                     <div class="project_textContainer">
                         <h3>Project 1</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, blanditiis! Iure magnam et culpa possimus reiciendis consequuntur deserunt, laborum asperiores!</p>
-                        <p>Skill1 / Skill2 / Skill3</p>
+                        <p>Lit tracker allows you to create your very own book list. Sort your books by ratings, mark them as read or look at other people's list for inspiration!</p>
+                        <p>HTML<span>/</span>CSS<span>/</span>Responsive Design<span>/</span>Javascript<span>/</span>React<span>/</span>Git<span>/</span>Firebase</p>
+                    </div>
+                    <div class="project_imgContainer">
+                        <img src="assets/project6.PNG" alt="screenshot of lit tracker">
+                    </div>
+                    <div class="button-container">
+                        <button class="button"><a href="">Repo</a></button>
+                        <button class="button"><a href="">Live</a></button>
                     </div>
                 </div>
 
-                <div class="project_container">
-                    <div class="project_imgContainer">
-                        <img src="https://picsum.photos/300/400/?random" alt="">
-                    </div>
+                <div class="project2 project_container">
                     <div class="project_textContainer">
                         <h3>Project 2</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odio asperiores consectetur, nihil quisquam qui suscipit perspiciatis obcaecati laudantium quae!</p>
-                        <p>Skill1 / Skill2 / Skill3 / SKill4 / Skill5 / Skill6</p>
+                        <p>Should I get it? Inspired by <a class="link" href="https://isthereanydeal.com/">isthereanydeal</a> this app allows users to quickly search a video game they're interested in to assist with their purchasing decisions.</p>
+                        <p>HTML<span>/</span>CSS<span>/</span>Responsive
+                        Design<span>/</span>Javascript<span>/</span>React<span>/</span>Git</p>
+                    </div>
+                    <div class="project_imgContainer">
+                        <img src="assets/project5.PNG" alt="screenshot of shouldIGetIt">
+                    </div>
+                    <div class="button-container">
+                        <button class="button"><a href="">Repo</a></button>
+                        <button class="button"><a href="">Live</a></button>
                     </div>
                 </div>
 
-                <div class="project_container">
-                    <div class="project_imgContainer">
-                        <img src="https://picsum.photos/300/400/?random" alt="">
-                    </div>
+                <div class="project3 project_container">
                     <div class="project_textContainer">
                         <h3>Project 3</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed sapiente, blanditiis laboriosam dolor ea enim recusandae velit eaque culpa maxime?</p>
-                        <p>Skill1 / Skill2</p>
+                        <p>A reponsive multi-page PSD conversion, a desktop design was used as a reference. Mobile design was subject to one's interpretation while maintaining consistency of the desktop design.</p>
+                        <p>HTML<span>/</span>CSS<span>/</span>Responsive
+                        Design</p>
+                    </div>
+                    <div class="project_imgContainer">
+                        <img src="assets/project2.PNG" alt="screenshot of beachstay">
+                    </div>
+                    <div class="button-container">
+                        <button class="button"><a href="">Repo</a></button>
+                        <button class="button"><a href="">Live</a></button>
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="contact">
             <div class="wrapper">
                 <h2>Contact</h2>
                 <form action="">
@@ -117,9 +154,23 @@
                     <label class="visuallyhidden" for="email">Email:</label>
                     <input required type="email" id="email" placeholder="Email" name="email">
                     <label for="message" class="visuallyhidden">Message:</label>
-                    <textarea name="messsage" id="message" cols="30" rows="5"></textarea>
-                    <button type="submit">Send</button>
+                    <textarea placeholder="Message" name="messsage" id="message" cols="30" rows="5"></textarea>
+                    <button class="button" type="submit">Send</button>
                 </form>
+                <div class="contact_icons">
+                    <div class="contact_email">
+                        <a href="mailto:derekluudevs@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <p>derekluudevs@gmail.com</p>
+                    </div>
+                    <div class="contact_linkedin">
+                        <a href="https://www.linkedin.com/in/derekluu/"><i class="fab fa-linkedin"></i></a>
+                        <p>LinkedIn</p>
+                    </div>
+                    <div class="contact_github">
+                        <a href="https://github.com/dluudevs"><i class="fab fa-github"></i></a>
+                        <p>Github</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -130,8 +181,8 @@
     </footer>
 
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <!-- jquery library for transition animations -->
     <script src='scripts/jquery.transit.js'></script>
-    <!-- jquery library for easier animations -->
     <script>
     $(document).ready(function (){
         $('.hamburger').on('click', function(){
@@ -143,12 +194,11 @@
     const toggleMobileMenu = () => {
         if (!$('.nav_list').hasClass('nav_mobile')){
             $('.nav_list').addClass('nav_mobile');
-            $('.nav_mobile').transition({ x: '90%', opacity: 1}, 500);
+            $('.nav_mobile').transition({ x: '70%', opacity: 1}, 500);
         } else if ($('.nav_list').hasClass('nav_mobile')){
             $('.nav_mobile').transition({ x: '190%', opacity: 0}, 500, () => {
                 $('.nav_list').removeClass('nav_mobile');
             });
-            //must pass in callback function to remove class otherwise remove class will negate the animation
         }
     }
 
