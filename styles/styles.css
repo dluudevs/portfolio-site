@@ -530,12 +530,13 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly; }
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
 
 .portfolio .project_container button {
-  width: 80px; }
+  width: 100px;
+  -webkit-box-shadow: 0 2px 2px rgba(168, 168, 168, 0.6);
+  box-shadow: 0 2px 2px rgba(168, 168, 168, 0.6); }
 
 .portfolio h2 {
   margin: 8% 0;
@@ -634,27 +635,26 @@ nav {
   .contact form textarea {
     margin-bottom: 5.5%; }
   .contact form button {
-    width: 80px;
-    margin-bottom: 5.5%; }
+    width: 100%;
+    margin: 0 auto 2.75% auto; }
 
-.contact .contact_icons div {
-  display: inline-block;
-  margin-right: 4%;
-  margin-bottom: 0; }
-
-.contact .contact_icons i {
-  font-size: 1.25rem;
-  margin-right: 2.75%;
-  -webkit-transition: color 0.25s;
-  -o-transition: color 0.25s;
-  transition: color 0.25s; }
-
-.contact .contact_icons i:hover {
-  color: #ff4757; }
-
-.contact .contact_icons p {
-  margin: 0;
-  display: none; }
+.contact .contact_icons {
+  text-align: center; }
+  .contact .contact_icons div {
+    display: inline-block;
+    margin-right: 2%;
+    margin-bottom: 0; }
+  .contact .contact_icons i {
+    font-size: 1rem;
+    margin-right: 2.75%;
+    -webkit-transition: color 0.25s;
+    -o-transition: color 0.25s;
+    transition: color 0.25s; }
+  .contact .contact_icons i:hover {
+    color: #ff4757; }
+  .contact .contact_icons p {
+    margin: 0;
+    display: none; }
 
 footer {
   background: #000;

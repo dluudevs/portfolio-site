@@ -40,22 +40,24 @@
         }
 
         button {
-            width: 80px;
-            margin-bottom: 5.5%;
+            width: 100%;
+            margin: 0 auto 2.75% auto;
         }
     
     }
 
     .contact_icons {
 
+        text-align: center;
+
         div {
             display: inline-block;
-            margin-right: 4%;
+            margin-right: 2%;
             margin-bottom: 0;
         }
 
         i{
-            font-size: 1.25rem;
+            font-size: 1rem;
             margin-right: 2.75%;
             transition: color 0.25s;
         }
