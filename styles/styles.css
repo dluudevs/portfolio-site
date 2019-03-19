@@ -609,7 +609,7 @@ nav {
   font-size: 0.9rem; }
   .contact form input, .contact form textarea {
     padding-left: 2.5%;
-    border: 1px solid black;
+    border: 1px solid #a8a8a8;
     -webkit-transition: border 0.25s;
     -o-transition: border 0.25s;
     transition: border 0.25s; }
