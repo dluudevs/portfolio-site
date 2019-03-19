@@ -25,7 +25,6 @@
     overflow: hidden;
     display: block;
     border-radius: 50%;
-    @include box-shadow(0, 0, 10px, 0.6);
     
     img {
         width: 100%;
@@ -36,6 +35,7 @@
 
 .button_cv {
     margin: 10% auto 0 auto;
+    width: 175px;
 }
 
 .accent-font {

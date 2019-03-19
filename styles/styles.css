@@ -469,15 +469,14 @@ nav {
   width: 180px;
   overflow: hidden;
   display: block;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 0 10px rgba(168, 168, 168, 0.6);
-  box-shadow: 0 0 10px rgba(168, 168, 168, 0.6); }
+  border-radius: 50%; }
   .about_pic img {
     width: 100%;
     display: block; }
 
 .button_cv {
-  margin: 10% auto 0 auto; }
+  margin: 10% auto 0 auto;
+  width: 175px; }
 
 .accent-font {
   font-weight: 500; }
