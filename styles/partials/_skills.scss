@@ -20,16 +20,20 @@
     flex-basis: 20%;
     margin-bottom: 10%;
     margin-right: 10%;
+    font-size: 3.25rem;
+    position: relative;
 
     .icon {
-        font-size: 3rem;
         color: $accent-color;
     }
     
     
     .firebase {
         display: block;
-        width: 100%;
+        position: absolute;
+        top: 5%;
+        // width: 100%;
+        // object-fit: cover;
     }
 
 }

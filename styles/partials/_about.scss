@@ -36,6 +36,7 @@
 .button_cv {
     margin: 10% auto 0 auto;
     width: 175px;
+    @include box-shadow(0, 2px, 2px, 0.6);
 }
 
 .accent-font {

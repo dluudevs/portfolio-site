@@ -15,14 +15,14 @@
 </head>
 <body>
     <header id="home">
-        <div class="wrapper">
+        <div class="nav_wrapper">
             <nav class="clearfix">
                 <ul class="nav_list">
-                    <li><a href="#home"></a>Home</li>
-                    <li><a href="#about"></a>About</li>
-                    <li><a href="#skills"></a>Skills</li>
-                    <li><a href="#portfolio"></a>Portfolio</li>
-                    <li><a href="#contact"></a>Contact</li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <button class="hamburger hamburger__spring" type="button" aria-label="menu" aria-controls="navigation">
                     <span class="hamburger_box">
@@ -87,7 +87,7 @@
                         <i class="icon devicon-github-plain colored"></i>
                     </li>
                     <li class="skill_icon">
-                        <img src="assets/firebase.svg" alt="firebase logo">
+                        <img class="firebase" src="assets/firebase.svg" alt="firebase logo">
                     </li>
                 </ul>
             </div>
@@ -195,30 +195,9 @@
     <script src='scripts/jquery.transit.js'></script>
     <!-- animate on scroll -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- smooth scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+    <script src="scripts/script.js"></script>
 
-    <script>
-    $(document).ready(function (){
-        AOS.init({
-            duration: 1500,
-            once: true,
-        });
-        $('.hamburger').on('click', function(){
-            $(this).toggleClass('is_active');
-            toggleMobileMenu();
-        })
-    }) 
-    
-    const toggleMobileMenu = () => {
-        if (!$('.nav_list').hasClass('nav_mobile')){
-            $('.nav_list').addClass('nav_mobile');
-            $('.nav_mobile').transition({ x: '70%', opacity: 1}, 500);
-        } else if ($('.nav_list').hasClass('nav_mobile')){
-            $('.nav_mobile').transition({ x: '190%', opacity: 0}, 500, () => {
-                $('.nav_list').removeClass('nav_mobile');
-            });
-        }
-    }
-
-    </script>
 </body>
 </html>

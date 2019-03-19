@@ -201,6 +201,9 @@ button {
 .accent-font {
   color: #ff4757; }
 
+.nav_wrapper {
+  width: 95%; }
+
 header li {
   display: inline-block; }
 
@@ -395,10 +398,7 @@ nav {
   bottom: -10px; }
 
 .hamburger__spring .hamburger_inner {
-  top: 2px;
-  -webkit-transition: background-color 0s 0.13s linear;
-  -o-transition: background-color 0s 0.13s linear;
-  transition: background-color 0s 0.13s linear; }
+  top: 2px; }
 
 .hamburger__spring .hamburger_inner::before {
   top: 10px;
@@ -476,7 +476,9 @@ nav {
 
 .button_cv {
   margin: 10% auto 0 auto;
-  width: 175px; }
+  width: 175px;
+  -webkit-box-shadow: 0 2px 2px rgba(168, 168, 168, 0.6);
+  box-shadow: 0 2px 2px rgba(168, 168, 168, 0.6); }
 
 .accent-font {
   font-weight: 500; }
@@ -510,13 +512,15 @@ nav {
   -ms-flex-preferred-size: 20%;
   flex-basis: 20%;
   margin-bottom: 10%;
-  margin-right: 10%; }
+  margin-right: 10%;
+  font-size: 3.25rem;
+  position: relative; }
   .skill_icon .icon {
-    font-size: 3rem;
     color: #ff4757; }
   .skill_icon .firebase {
     display: block;
-    width: 100%; }
+    position: absolute;
+    top: 5%; }
 
 .skill_icon:nth-child(3n + 3) {
   margin-right: 0; }
