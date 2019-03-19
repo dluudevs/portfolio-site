@@ -25,6 +25,7 @@ html {
     font-family: 'Poppins', sans-serif;
     color: $text-color;
     overflow-x: hidden;
+    -webkit-overflow-x: hidden;
 }
 
 .wrapper {

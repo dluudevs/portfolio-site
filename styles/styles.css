@@ -152,7 +152,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 html {
   font-family: 'Poppins', sans-serif;
   color: #9e9c9c;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  -webkit-overflow-x: hidden; }
 
 .wrapper {
   width: 77%;
