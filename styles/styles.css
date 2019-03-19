@@ -508,24 +508,25 @@ nav {
   justify-content: space-between; }
 
 .skill_icon {
-  display: inline-block;
+  list-style: none;
   -ms-flex-preferred-size: 20%;
   flex-basis: 20%;
   margin-bottom: 10%;
   margin-right: 10%;
   font-size: 3.25rem;
-  position: relative; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
   .skill_icon .icon {
-    color: #ff4757; }
-  .skill_icon .firebase {
-    display: block;
-    position: absolute;
-    top: 5%; }
+    color: #ff4757;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center; }
 
 .skill_icon:nth-child(3n + 3) {
   margin-right: 0; }
 
-.skill_icon:nth-child(n + 6) {
+.skill_icon:nth-child(n + 7) {
   margin-bottom: 0; }
 
 .portfolio .project_container .button-container {

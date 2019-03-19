@@ -16,24 +16,20 @@
 
 .skill_icon {
 
-    display: inline-block;
+    list-style: none;
     flex-basis: 20%;
     margin-bottom: 10%;
     margin-right: 10%;
     font-size: 3.25rem;
-    position: relative;
+    display: flex;
 
     .icon {
         color: $accent-color;
+        align-self: center;
     }
     
-    
     .firebase {
-        display: block;
-        position: absolute;
-        top: 5%;
-        // width: 100%;
-        // object-fit: cover;
+        // display: block;
     }
 
 }
@@ -42,7 +38,7 @@
     margin-right: 0;
 }
 
-.skill_icon:nth-child(n + 6){
+.skill_icon:nth-child(n + 7){
     margin-bottom: 0;
 }
 
