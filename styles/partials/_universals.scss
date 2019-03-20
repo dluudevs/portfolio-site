@@ -1,5 +1,8 @@
 //Variables
 
+//TODO: scalability for wrapper up to 1600
+//bottom space in hero image
+
 $accent-color: #ff4757;
 $hero-text-color: #ffffff;
 $text-color: #9e9c9c;
@@ -58,7 +61,7 @@ section {
 section h2 {
     text-transform: uppercase;
     margin-top: 20%;
-    margin-bottom: 20%
+    margin-bottom: 10%;
 }
 
 textarea, input[type="text"], input[type="email"] {
@@ -105,7 +108,8 @@ button {
     color: $accent-color;
 }
 
-@media (min-width: 784px){
+
+@media (min-width: 709px){
 
     html {
         font-size: 112.5%;
@@ -120,7 +124,6 @@ button {
         margin-bottom: 7.5%;
     };
 
-    // TODO: fix all the spacing between sections and headers
 }
 
 @media (min-width: 1023px){
@@ -132,4 +135,9 @@ button {
     .wrapper {
         max-width: 1600px;
     }
+
+    section h2 {
+        margin-top: 10%;
+        margin-bottom: 5%;
+    };
 }

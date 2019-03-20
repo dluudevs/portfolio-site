@@ -41,7 +41,16 @@
     margin-bottom: 0;
 }
 
-@media (min-width: 784px){
+@media (min-width: 709px){
+
+    .skill_icon {
+        font-size: 4.25rem;
+    }
+
+    .skill_icon .firebase {
+        max-width: 77px;
+        max-height: 77px;
+    }
 
     .skill_container {
         justify-content: space-evenly;
@@ -50,11 +59,6 @@
     .skill_icon {
         margin-right: 0;
         justify-content: center;
-    }
-
-    .skill_icon .firebase {
-        max-width: 58.5px;
-        max-height: 58.5px;
     }
 
     .skill_icon:nth-child(6){

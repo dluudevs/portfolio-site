@@ -2,12 +2,27 @@ footer {
 
     background: #000;
     margin-top: 18%;
-    padding: 1.25% 0;
+    padding: 1% 0;
     text-align: center;
 
     p {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         color: #fff;
         margin: 0;
+    }
+}
+
+@media (min-width: 709px){
+
+    footer {
+        margin-top: 13.5%;
+    }
+    
+}
+
+@media (min-width: 1023px){
+
+    footer {
+        margin-top: 9%;
     }
 }

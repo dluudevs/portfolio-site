@@ -98,7 +98,7 @@
                 <h2>Portfolio</h2>
 
                 <div class="project1 project_container" data-aos="fade-right">
-                    <div class="project_textContainer">
+                    <div class="project_container_top project_textContainer">
                         <h3>Lit Tracker</h3>
                         <p>Built with React, this app allows you to create your very own book list. Sort your books by ratings, mark them as read or look at other people's list for inspiration!</p>
                         <p>HTML<span>/</span>CSS<span>/</span>Responsive Design<span>/</span>Javascript<span>/</span>React<span>/</span>Git<span>/</span>Firebase</p>
@@ -115,7 +115,7 @@
                 </div>
 
                 <div class="project2 project_container">
-                    <div class="project_textContainer" data-aos="fade-right">
+                    <div class="project_container_top project_textContainer" data-aos="fade-right">
                         <h3>ShouldIGetIt</h3>
                         <p>Inspired by <a class="link" href="https://isthereanydeal.com/">isthereanydeal</a> this app allows users to quickly search a video game they're interested in to assist with their purchasing decisions.</p>
                         <p>HTML<span>/</span>CSS<span>/</span>Responsive
@@ -133,9 +133,9 @@
                 </div>
 
                 <div class="project3 project_container">
-                    <div class="project_textContainer" data-aos="fade-right">
+                    <div class="project_container_top project_textContainer" data-aos="fade-right">
                         <h3>Beachstay</h3>
-                        <p>A reponsive multi-page PSD conversion, a desktop design was used as a reference. Mobile design was subject to one's interpretation while maintaining consistency of the desktop design.</p>
+                        <p>A reponsive multi-page PSD conversion, a desktop design was used as a reference. Mobile design was subject to one's interpretation of the overall design.</p>
                         <p>HTML<span>/</span>CSS<span>/</span>Responsive
                         Design</p>
                     </div>
@@ -157,29 +157,37 @@
             <div class="wrapper">
                 <h2>Contact</h2>
                 <form action="">
-                    <label class="visuallyhidden" for="name">Name:</label>
-                    <input required type="text" id="name" placeholder="Name" name="name">
-                    <label class="visuallyhidden" for="email">Email:</label>
-                    <input required type="email" id="email" placeholder="Email" name="email">
-                    <label for="message" class="visuallyhidden">Message:</label>
-                    <textarea placeholder="Message" name="messsage" id="message" cols="30" rows="5"></textarea>
-                    <div class="form_bottom" data-aos="fade-up">
+                    <div class="form_top">
+                        <label class="visuallyhidden" for="name">Name:</label>
+                        <input required type="text" id="name" placeholder="Name" name="name">
+                        <label class="visuallyhidden" for="email">Email:</label>
+                        <input required type="email" id="email" placeholder="Email" name="email">
+                        <label for="message" class="visuallyhidden">Message:</label>
+                        <textarea placeholder="Message" name="messsage" id="message" cols="30" rows="5"></textarea>
                         <button class="button" type="submit">Submit</button>
+                    </div>
+                    <div class="form_bottom" data-aos="fade-up">
                         <p class="email_link hvr-underline-from-center"><a href="mailto:hello@derekluudevs.com">hello@derekluudevs.com</a>
                         </p>
                         <div class="contact_icons">
-                            <div class="contact_linkedin">
-                                <a href="https://www.linkedin.com/in/derekluu/"><i class="fab fa-linkedin"></i></a>
-                                <p>LinkedIn</p>
+                            
+                            <div class="contact_container">
+                                <div class="contact_link contact_linkedin">
+                                    <a href="https://www.linkedin.com/in/derekluu/"><i class="fab fa-linkedin"></i></a>
+                                    <p>linkedin.com/derekluu</p>
+                                </div>
+
+                                <div class="contact_link contact_github">
+                                    <a href="https://github.com/dluudevs"><i class="fab fa-github"></i></a>
+                                    <p>github.com/dluudevs</p>
+                                </div>
+
+                                <div class="contact_link contact_twitter">
+                                    <a href="https://twitter.com/dluudevs"><i class="fab fa-twitter"></i></a>
+                                    <p>twitter.com/dluudevs</p>
+                                </div>
                             </div>
-                            <div class="contact_github">
-                                <a href="https://github.com/dluudevs"><i class="fab fa-github"></i></a>
-                                <p>Github</p>
-                            </div>
-                            <div class="contact_twitter">
-                                <a href="https://twitter.com/dluudevs"><i class="fab fa-twitter"></i></a>
-                                <p>Twitter</p>
-                            </div>
+
                         </div>
                     </div>
                 </form>
@@ -188,7 +196,7 @@
     </main>
     <footer>
         <div class="wrapper">
-            <p>Developed by Derek Luu 2019 </p>
+            <p>Made by Derek Luu &copy; 2019 </p>
         </div>
     </footer>
 

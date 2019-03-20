@@ -13,9 +13,8 @@
 		left: 100%;
 		right: 0;
 		bottom: 0;
-		background: transparent;
+		background: $accent-color;
 		height: 1px;
-		width: 100%;
 		@include prefixed(transition-property, "left");
 		@include prefixed(transition-duration, $duration);
 		@include prefixed(transition-timing-function, ease-out);

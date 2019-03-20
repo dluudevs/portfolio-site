@@ -9,87 +9,173 @@
         @include accent-line(1.5rem);
     }
 
-    .form_bottom {
-        text-align: center;
+}
+
+.form_bottom {
+    text-align: center;
+}
+
+.email_link {
+    text-align: center;
+    margin: 0 0 3% 0;
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
+    transition: color 0.25s;
+    display: inline-block;
+    position: relative;
+    transition: all 0.25s;
+}
+
+.email_link:after {
+    content:'';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: transparent;
+    bottom: 0;
+    left: 0;
+}
+
+form {
+    font-size: 0.9rem;
+
+    input, textarea {
+        padding-left: 2.5%;
+        border: 1px solid $secondary-color;
+        transition: border 0.25s;
     }
+
+    input:focus, textarea:focus{
+        border-color: $accent-color;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        font-size: 0.8rem;
+    }
+
+    input[type=text],input[type=email] {
+        margin-bottom: 3%;
+    }
+
+    textarea {
+        margin-bottom: 5.5%;
+    }
+
+    button {
+        width: 100%;
+        margin: 0 auto 2.75% auto;
+    }
+}
+
+.contact_icons {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    .contact_link {
+        display: inline-block;
+        margin-right: 4%;
+        margin-bottom: 0;
+    }
+
+    i{
+        font-size: 1.15rem;
+        transition: color 0.25s;
+    }
+
+    i:hover {
+        color: $accent-color;
+    }
+
+    p {
+        margin: 0;
+        display: none;
+    }
+}
+
+.contact_container {
+    flex-basis: 180px;
+    }
+   
+
+@media (min-width: 414px){
+    .contact form button {
+        width: 225px;
+    }
+}
+
+@media (min-width: 709px){
+
+    .contact form button {
+        width: 400px;
+    }
+
+    .contact .contact_container {
+        flex-basis: 202px;
+    }
+}
+
+@media (min-width: 1023px){
 
     .email_link {
-        text-align: center;
-        margin: 0 0 3% 0;
-        font-size: 0.8rem;
-        letter-spacing: 0.05rem;
-        transition: color 0.25s;
-        display: inline-block;
-        position: relative;
-        transition: all 0.25s;
+        margin-top: 3.25%;
     }
 
-    .email_link:after {
-        content:'';
-        position: absolute;
-        height: 1px;
-        width: 100%;
-        background-color: transparent;
-        bottom: 0;
-        left: 0;
-    }
-
-    form {
-        font-size: 0.9rem;
-    
-        input, textarea {
-            padding-left: 2.5%;
-            border: 1px solid $secondary-color;
-            transition: border 0.25s;
-        }
-
-        input:focus, textarea:focus{
-            border-color: $accent-color;
-        }
-    
-        input::placeholder,
-        textarea::placeholder {
-            font-size: 0.8rem;
-        }
-
-        input[type=text],input[type=email] {
-            margin-bottom: 3%;
-        }
-
-        textarea {
-            margin-bottom: 5.5%;
-        }
-
-        button {
-            width: 100%;
-            margin: 0 auto 2.75% auto;
-        }
-    
+    .contact .contact_container {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        flex-basis: 100%;
     }
 
     .contact_icons {
+        margin-top: 7.5%;
+        display: flex;
+        height: calc(100% - 22.5px);
 
-        text-align: center;
-
-        div {
+        .contact_link { 
+            margin-bottom: 5%;
             display: inline-block;
-            margin-right: 4%;
-            margin-bottom: 0;
-        }
-
-        i{
-            font-size: 1.15rem;
+            cursor: pointer;
             transition: color 0.25s;
+            width: 100%;
         }
 
-        i:hover {
+        .contact_link:hover {
             color: $accent-color;
         }
+    }
 
-        p {
-            margin: 0;
-            display: none;
+    form {
+        display: flex;
+        justify-content: space-between;
+
+
+        .contact_icons p {
+            padding-left: 2.5%;
+            display: inline-block;
+            font-size: 0.7rem;
+            letter-spacing: 0.05rem;
         }
     }
-   
+
+    .contact form button {
+        width: 45%;
+        margin: 0;
+    }
+
+    .form_top {
+        flex-basis: 67%;
+
+        label, input {
+            max-width: 100%;
+        }
+    }
+
+    .form_bottom {
+        flex-basis: 28%;
+        text-align: left;
+    }
 }
