@@ -248,8 +248,8 @@ nav {
   position: fixed; }
 
 .nav_scrolled {
-  -webkit-box-shadow: 0 2.5px 5px rgba(168, 168, 168, 0.6);
-  box-shadow: 0 2.5px 5px rgba(168, 168, 168, 0.6); }
+  -webkit-box-shadow: 0px 3px 3px #edf6fa;
+  box-shadow: 0px 3px 3px #edf6fa; }
 
 .nav_list {
   z-index: 10; }

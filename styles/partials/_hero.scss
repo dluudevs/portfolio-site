@@ -29,7 +29,8 @@ nav {
 }
 
 .nav_scrolled {
-    @include box-shadow(0, 2.5px, 5px, 0.6);
+    box-shadow: 0px 3px 3px #edf6fa;
+    // @include box-shadow(0px, 2.5px, 2.5px, 0.6);
 }
 
 .nav_list {

@@ -15,6 +15,8 @@ $(document).ready(function () {
             //     'box-shadow': '0 5px 5px 0.6'
             // });
             $('nav').addClass('nav_scrolled');
+        } else {
+            $('nav').removeClass('nav_scrolled');
         }
     })
 
