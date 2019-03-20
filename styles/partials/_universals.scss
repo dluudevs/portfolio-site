@@ -57,6 +57,8 @@ section {
 
 section h2 {
     text-transform: uppercase;
+    margin-top: 20%;
+    margin-bottom: 20%
 }
 
 textarea, input[type="text"], input[type="email"] {
@@ -89,7 +91,7 @@ button {
     transition: all 0.25s; 
 }
         
-.link:after {
+.link:before {
     content: '';
     position: absolute;
     width: 100%;
@@ -102,7 +104,32 @@ button {
 .link:hover {
     color: $accent-color;
 }
-        
-.link:hover::after {
-    background-color: transparent;
+
+@media (min-width: 784px){
+
+    html {
+        font-size: 112.5%;
+    }
+
+    .wrapper {
+        width: 80%;
+    }
+
+    section h2 {
+        margin-top: 17.5%;
+        margin-bottom: 7.5%;
+    };
+
+    // TODO: fix all the spacing between sections and headers
+}
+
+@media (min-width: 1023px){
+
+    html {
+        font-size: 120%;
+    }
+
+    .wrapper {
+        max-width: 1600px;
+    }
 }

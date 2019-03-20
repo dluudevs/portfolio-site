@@ -1,24 +1,9 @@
 
 .portfolio {
 
-    .project_container {
-
-        .button-container {
-            margin-top: 5.5%;
-            display: flex;
-            justify-content: space-around;
-        }
-        button {
-            width: 100px;
-            @include box-shadow(0, 2px, 2px, 0.6);
-        }
-    }
-
     h2 {
-        margin-top: 20%;
-        margin-bottom: 10%;
         position: relative;
-    
+        
         &:before {
             @include accent-line(1.5rem);
         }
@@ -26,6 +11,31 @@
 
     h3 {
         margin-top: 10%;
+    }
+
+    .project_container {
+
+        .button-container {
+            margin-top: 5.5%;
+            padding: 0 auto;
+            text-align: center;
+            // display: flex;
+            // justify-content: space-around;
+        }
+        button {
+            width: 100px;
+            @include box-shadow(0, 2px, 2px, 0.6);
+            display: inline-block;
+        }
+
+        button:first-child  {
+            margin-right: 2.5%;
+        }
+
+        button:last-child {
+            margin-left: 2.5%;
+        }
+
     }
 
     .project_textContainer {
@@ -39,30 +49,6 @@
         p:last-child {
             font-size: 0.825rem;
         }
-
-        // .link {
-        //     position: relative;
-        //     transition: all 0.25s; 
-        // }
-        
-        // .link:after {
-        //     content: '';
-        //     position: absolute;
-        //     width: 100%;
-        //     height: 1px;
-        //     bottom: 0;
-        //     left: 0;
-        //     background-color: $accent-color;
-        // }
-        
-        // .link:hover {
-        //     color: $accent-color;
-        // }
-        
-        // .link:hover::after {
-        //     background-color: transparent;
-        // }
-
     }
 }
 

@@ -1,7 +1,5 @@
 .skills h2 {
     position: relative;
-    margin-top: 20%;
-    margin-bottom: 10%;
 
     &:before {
         @include accent-line (1.5rem);
@@ -26,12 +24,11 @@
 
     .icon {
         color: $accent-color;
-        align-self: center;
     }
     
     .firebase {
-        display: block;
-        width: 100%;
+        max-width: 52px;
+        max-height: 52px;
     }
 
 }
@@ -44,3 +41,24 @@
     margin-bottom: 0;
 }
 
+@media (min-width: 784px){
+
+    .skill_container {
+        justify-content: space-evenly;
+    }
+
+    .skill_icon {
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .skill_icon .firebase {
+        max-width: 58.5px;
+        max-height: 58.5px;
+    }
+
+    .skill_icon:nth-child(6){
+        margin-bottom: 0;
+    }
+
+}

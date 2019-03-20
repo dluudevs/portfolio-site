@@ -2,12 +2,14 @@
 .about h2 {
     padding-top: 1px;
     position: relative;
-    margin-bottom: 10%;
-    margin-top: 15%;
 
     &::after {
       @include accent-line (1.5rem);
     }
+}
+
+.about_text {
+    padding-top: 2.5vh;
 }
 
 .about_text p:first-of-type {
@@ -41,4 +43,41 @@
 
 .accent-font {
     font-weight: 500;
+}
+
+@media (min-width: 784px){
+
+    .about_container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about_pic {
+        border-radius: 10px;
+        flex-basis: 35%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .about_text {
+        flex-basis: 60%;
+    }
+
+    .button_cv {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 5%;
+    }
+
+    .about_text p:first-of-type {
+        margin-top: 0%;
+    }
+}
+
+@media (min-width: 1023px){
+
+    .button_cv {
+        margin-top: 3.5%;
+    }
+
 }
