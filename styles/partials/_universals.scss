@@ -117,6 +117,7 @@ button {
 
     .wrapper {
         width: 80%;
+        max-width: 1600px;
     }
 
     section h2 {
@@ -132,12 +133,21 @@ button {
         font-size: 120%;
     }
 
-    .wrapper {
-        max-width: 1600px;
-    }
-
     section h2 {
         margin-top: 10%;
         margin-bottom: 5%;
     };
+}
+
+@media (min-width: 1400px){
+    html {
+        font-size: 150%;
+    }
+}
+
+@media (min-width: 1919px){
+
+    html {
+        font-size: 170%;
+    }
 }

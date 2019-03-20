@@ -226,7 +226,8 @@ button {
   html {
     font-size: 112.5%; }
   .wrapper {
-    width: 80%; }
+    width: 80%;
+    max-width: 1600px; }
   section h2 {
     margin-top: 17.5%;
     margin-bottom: 7.5%; } }
@@ -234,11 +235,17 @@ button {
 @media (min-width: 1023px) {
   html {
     font-size: 120%; }
-  .wrapper {
-    max-width: 1600px; }
   section h2 {
     margin-top: 10%;
     margin-bottom: 5%; } }
+
+@media (min-width: 1400px) {
+  html {
+    font-size: 150%; } }
+
+@media (min-width: 1919px) {
+  html {
+    font-size: 170%; } }
 
 /*!
  * Hover.css (http://ianlunn.github.io/Hover/)
@@ -4580,10 +4587,11 @@ nav {
   background-color: #ff4757; }
 
 .fullbleed {
-  height: calc(100vh - 2.5vh - 10vh);
+  height: 97.5vh;
   background-image: url("../assets/ales-nesetril-734016-unsplash.jpg");
   background-size: cover;
-  background-position-x: 17.8%; }
+  background-position-x: 17.8%;
+  margin-bottom: 2.5vh; }
 
 .fullbleed::before {
   content: '';
@@ -4665,7 +4673,7 @@ nav {
     background-position-y: 32.5%;
     background-position-x: 0; }
   .intro {
-    width: 50%; }
+    max-width: 440px; }
   .nav_wrapper {
     height: 100%;
     display: -webkit-box;
@@ -4690,6 +4698,10 @@ nav {
     border: none; }
   nav .hamburger {
     display: none; } }
+
+@media (min-width: 1400px) {
+  .intro {
+    max-width: 650px; } }
 
 .hamburger {
   display: inline-block;
@@ -4826,7 +4838,7 @@ nav {
 
 .button_cv {
   margin: 10% auto 0 auto;
-  width: 175px;
+  width: 30%;
   -webkit-box-shadow: 0 2px 2px rgba(168, 168, 168, 0.6);
   box-shadow: 0 2px 2px rgba(168, 168, 168, 0.6); }
 
@@ -4924,6 +4936,21 @@ nav {
   .skill_icon:nth-child(6) {
     margin-bottom: 0; } }
 
+@media (min-width: 1023px) {
+  .skill_icon .firebase {
+    max-width: 82px;
+    max-height: 82px; } }
+
+@media (min-width: 1400px) {
+  .skill_icon .firebase {
+    max-width: 102px;
+    max-height: 102px; } }
+
+@media (min-width: 1919px) {
+  .skill_icon .firebase {
+    max-width: 116px;
+    max-height: 116px; } }
+
 .portfolio h2 {
   position: relative; }
   .portfolio h2:before {
@@ -4948,7 +4975,7 @@ nav {
   text-align: center; }
 
 .portfolio .project_container button {
-  width: 100px;
+  width: 30%;
   -webkit-box-shadow: 0 2px 2px rgba(168, 168, 168, 0.6);
   box-shadow: 0 2px 2px rgba(168, 168, 168, 0.6);
   display: inline-block; }
@@ -5078,7 +5105,9 @@ form {
     margin-bottom: 5.5%; }
   form button {
     width: 100%;
-    margin: 0 auto 2.75% auto; }
+    margin: 0 auto 2.75% auto;
+    -webkit-box-shadow: 0 2px 2px rgba(168, 168, 168, 0.6);
+    box-shadow: 0 2px 2px rgba(168, 168, 168, 0.6); }
 
 .contact_icons {
   display: -webkit-box;
@@ -5120,7 +5149,7 @@ form {
 
 @media (min-width: 1023px) {
   .email_link {
-    margin-top: 3.25%; }
+    margin-top: 5%; }
   .contact .contact_container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5161,7 +5190,7 @@ form {
       font-size: 0.7rem;
       letter-spacing: 0.05rem; }
   .contact form button {
-    width: 45%;
+    width: 35%;
     margin: 0; }
   .form_top {
     -ms-flex-preferred-size: 67%;

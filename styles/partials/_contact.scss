@@ -65,6 +65,7 @@ form {
     button {
         width: 100%;
         margin: 0 auto 2.75% auto;
+        @include box-shadow(0, 2px, 2px, 0.6);
     }
 }
 
@@ -120,7 +121,7 @@ form {
 @media (min-width: 1023px){
 
     .email_link {
-        margin-top: 3.25%;
+        margin-top: 5%;
     }
 
     .contact .contact_container {
@@ -162,7 +163,7 @@ form {
     }
 
     .contact form button {
-        width: 45%;
+        width: 35%;
         margin: 0;
     }
 

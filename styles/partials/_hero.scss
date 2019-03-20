@@ -86,11 +86,11 @@ nav {
 
 
 .fullbleed {
-    height: calc(100vh - 2.5vh - 10vh);
+    height: 97.5vh;
     background-image: url('../assets/ales-nesetril-734016-unsplash.jpg');
     background-size: cover;
     background-position-x: 17.8%;
-    // margin-bottom: 3.1vh;
+    margin-bottom: 2.5vh;
 }
 
 .fullbleed::before {
@@ -181,8 +181,9 @@ nav {
         background-position-x: 0;
     }
     .intro {
-        width: 50%;
+        max-width: 440px;
     }
+
 
     .nav_wrapper {
         height: 100%;
@@ -206,4 +207,10 @@ nav {
         display: none;
     }
 
+}
+
+@media (min-width: 1400px){
+    .intro {
+        max-width: 650px;
+    }
 }

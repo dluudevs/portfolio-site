@@ -1,7 +1,7 @@
 $(document).ready( () => {
 
+    listenMobile();
     toggleMobileMenu();
-    
     scrollThenFixed();
 
     AOS.init({
@@ -13,6 +13,7 @@ $(document).ready( () => {
         easing: 'swing',
         speed: 1250
     });
+
 
 });
 
@@ -62,4 +63,27 @@ const scrollThenFixed = () => {
             $('nav').removeClass('nav_scrolled');
         }
     })
+}
+
+const checkMobile = () => {
+
+    var mobile = window.matchMedia('(min-width: 1023px)');
+
+    if (mobile.matches){
+        $('.fade__left').attr('data-aos', 'fade-left');
+        $('.fade__down').attr('data-aos', 'fade-down');
+        $('.fade__up').attr('data-aos', 'fade-up');
+        AOS.init({
+            duration: 1500,
+            once: true,
+        });
+
+    } else {
+        $('[data-aos]').removeAttr('data-aos');
+    }
+}
+//this works, but not on document load
+
+const listenMobile = () => {
+    window.addEventListener('resize', checkMobile, false);
 }
