@@ -1,12 +1,39 @@
 .contact {
 
+
     h2 {
-        margin: 8% 0;
+        margin-top: 20%;
+        margin-bottom: 10%;
         position: relative;
     }
 
     h2:after {
         @include accent-line(1.5rem);
+    }
+
+    .form_bottom {
+        text-align: center;
+    }
+
+    .email_link {
+        text-align: center;
+        margin: 0 0 3% 0;
+        font-size: 0.8rem;
+        letter-spacing: 0.05rem;
+        transition: color 0.25s;
+        display: inline-block;
+        position: relative;
+        transition: all 0.25s;
+    }
+
+    .email_link:after {
+        content:'';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background-color: transparent;
+        bottom: 0;
+        left: 0;
     }
 
     form {
@@ -27,12 +54,8 @@
             font-size: 0.8rem;
         }
 
-        input[type=text]{
+        input[type=text],input[type=email] {
             margin-bottom: 3%;
-        }
-
-        input[type=email]{
-            margin-bottom: 5.5%;
         }
 
         textarea {
@@ -52,13 +75,12 @@
 
         div {
             display: inline-block;
-            margin-right: 2%;
+            margin-right: 4%;
             margin-bottom: 0;
         }
 
         i{
-            font-size: 1rem;
-            margin-right: 2.75%;
+            font-size: 1.15rem;
             transition: color 0.25s;
         }
 

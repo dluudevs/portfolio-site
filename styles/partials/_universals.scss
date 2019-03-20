@@ -84,3 +84,25 @@ button {
     color: $accent-color;
 }
 
+.link {
+    position: relative;
+    transition: all 0.25s; 
+}
+        
+.link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: $accent-color;
+}
+        
+.link:hover {
+    color: $accent-color;
+}
+        
+.link:hover::after {
+    background-color: transparent;
+}

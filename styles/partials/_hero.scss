@@ -1,5 +1,11 @@
+header {
+    background: #fff;
+    position: relative;
+}
+
 .nav_wrapper {
-    width: 95%
+    width: 90%;
+    margin: 0 auto;
 }
 
 header li {
@@ -8,11 +14,25 @@ header li {
 
 nav {
     height: 8vh;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 20;
 }
 
+.nav_absolute {
+    position: absolute;
+}
+
+.nav_fixed {
+    position: fixed;
+}
+
+.nav_scrolled {
+    @include box-shadow(0, 2.5px, 5px, 0.6);
+}
 
 .nav_list {
-    position: absolute;
     z-index: 10;
 }
 
@@ -47,9 +67,9 @@ nav {
 
 .hamburger {
     padding: 1.75vh 0 0 0;    
-    float: right;
     position: relative;
     z-index: 20;
+    float: right;
 }
 
 .hamburger:hover .hamburger_inner,
@@ -64,9 +84,9 @@ nav {
     background-color: $accent-color;
 }
 
+
 .fullbleed {
     height: calc(100vh - 2.5vh - 10vh);
-    padding-top: 25vh;
     background-image: url('../assets/ales-nesetril-734016-unsplash.jpg');
     background-size: cover;
     background-position-x: 17.8%;
@@ -78,11 +98,16 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
+    bottom: 0;
     width: 100%;
-    height: calc(100vh - 2.5vh - 10vh);
     z-index: 10;
     margin-top: 8vh;
     background: rgba(158, 156, 156, 0.2);
+}
+
+.fullbleed.flex_row {
+    display: flex;
+    align-items: center;
 }
 
 .intro {

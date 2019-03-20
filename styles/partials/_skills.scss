@@ -1,6 +1,7 @@
 .skills h2 {
     position: relative;
-    margin: 8% 0;
+    margin-top: 20%;
+    margin-bottom: 10%;
 
     &:before {
         @include accent-line (1.5rem);
@@ -28,6 +29,11 @@
         align-self: center;
     }
     
+    .firebase {
+        display: block;
+        width: 100%;
+    }
+
 }
 
 .skill_icon:nth-child(3n + 3){

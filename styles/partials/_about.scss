@@ -2,8 +2,8 @@
 .about h2 {
     padding-top: 1px;
     position: relative;
-    margin-bottom: 8%;
-    margin-top: 12.5%;
+    margin-bottom: 10%;
+    margin-top: 15%;
 
     &::after {
       @include accent-line (1.5rem);

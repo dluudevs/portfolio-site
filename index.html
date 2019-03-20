@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Derek Luu | Front-End Developer</title>
+    <title>Derek Luu | Web Developer</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -15,9 +15,9 @@
 </head>
 <body>
     <header id="home">
-        <nav class="clearfix">
+        <nav class="nav_absolute">
             <div class="nav_wrapper">
-                <ul class="nav_list">
+                <ul class="nav_list clearfix">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
@@ -31,7 +31,7 @@
                 </button>
             </div>
         </nav>
-        <div class="fullbleed">
+        <div class="fullbleed flex_row">
             <div class="wrapper">
                 <div class="intro" data-aos="fade-left" data-aos-duration="2250">
                     <h1><span class="hello">I am </span>Derek Luu </h1>
@@ -50,8 +50,8 @@
                         <img src="assets/headshot.png" alt="headshot of Derek Luu">
                     </div>
                     <div class="about_text">
-                        <p>Hi! I'm <span class="accent-font">Derek</span> a web developer from Toronto, Ontario. After picking up coding as a hobby I fell deeply in love with solving intricate problems in the digital realm.</p>
-                        <p>When I am not learning new code, I enjoy reading, trying new recipes and hanging out with friends. I am also the proud of owner of a very outspoken chihuahua!</p>
+                        <p>Hi! I'm <span class="accent-font">Derek</span>, a web developer from Toronto, Ontario. After picking up coding as a hobby I fell deeply in love with solving intricate problems in the digital realm.</p>
+                        <p>When I am not learning new code, I enjoy reading, trying new recipes and hanging out with friends. I am also the proud owner of a very outspoken chihuahua!</p>
                         <button class="button button_cv"><a href="#">Download CV</a></button>
                     </div>
                 </div>
@@ -99,8 +99,8 @@
 
                 <div class="project1 project_container" data-aos="fade-right">
                     <div class="project_textContainer">
-                        <h3>Project 1</h3>
-                        <p>Lit tracker allows you to create your very own book list. Sort your books by ratings, mark them as read or look at other people's list for inspiration!</p>
+                        <h3>Lit Tracker</h3>
+                        <p>Built with React, this app allows you to create your very own book list. Sort your books by ratings, mark them as read or look at other people's list for inspiration!</p>
                         <p>HTML<span>/</span>CSS<span>/</span>Responsive Design<span>/</span>Javascript<span>/</span>React<span>/</span>Git<span>/</span>Firebase</p>
                     </div>
                     <div class="project_container_bottom" data-aos="fade-left">
@@ -116,8 +116,8 @@
 
                 <div class="project2 project_container">
                     <div class="project_textContainer" data-aos="fade-right">
-                        <h3>Project 2</h3>
-                        <p>Should I get it? Inspired by <a class="link" href="https://isthereanydeal.com/">isthereanydeal</a> this app allows users to quickly search a video game they're interested in to assist with their purchasing decisions.</p>
+                        <h3>ShouldIGetIt?</h3>
+                        <p>Inspired by <a class="link" href="https://isthereanydeal.com/">isthereanydeal</a> this app allows users to quickly search a video game they're interested in to assist with their purchasing decisions.</p>
                         <p>HTML<span>/</span>CSS<span>/</span>Responsive
                         Design<span>/</span>Javascript<span>/</span>React<span>/</span>Git</p>
                     </div>
@@ -134,7 +134,7 @@
 
                 <div class="project3 project_container">
                     <div class="project_textContainer" data-aos="fade-right">
-                        <h3>Project 3</h3>
+                        <h3>Beachstay</h3>
                         <p>A reponsive multi-page PSD conversion, a desktop design was used as a reference. Mobile design was subject to one's interpretation while maintaining consistency of the desktop design.</p>
                         <p>HTML<span>/</span>CSS<span>/</span>Responsive
                         Design</p>
@@ -165,11 +165,9 @@
                     <textarea placeholder="Message" name="messsage" id="message" cols="30" rows="5"></textarea>
                     <div class="form_bottom" data-aos="fade-up">
                         <button class="button" type="submit">Submit</button>
+                        <p class="email_link hvr-underline-from-center"><a href="mailto:hello@derekluudevs.com">hello@derekluudevs.com</a>
+                        </p>
                         <div class="contact_icons">
-                            <div class="contact_email">
-                                <a href="mailto:derekluudevs@gmail.com"><i class="fas fa-envelope"></i></a>
-                                <p>derekluudevs@gmail.com</p>
-                            </div>
                             <div class="contact_linkedin">
                                 <a href="https://www.linkedin.com/in/derekluu/"><i class="fab fa-linkedin"></i></a>
                                 <p>LinkedIn</p>
@@ -177,6 +175,10 @@
                             <div class="contact_github">
                                 <a href="https://github.com/dluudevs"><i class="fab fa-github"></i></a>
                                 <p>Github</p>
+                            </div>
+                            <div class="contact_twitter">
+                                <a href="https://twitter.com/dluudevs"><i class="fab fa-twitter"></i></a>
+                                <p>Twitter</p>
                             </div>
                         </div>
                     </div>
@@ -186,7 +188,7 @@
     </main>
     <footer>
         <div class="wrapper">
-            <p>Made by Derek Luu &copy; 2019 </p>
+            <p>Developed by Derek Luu 2019 </p>
         </div>
     </footer>
 

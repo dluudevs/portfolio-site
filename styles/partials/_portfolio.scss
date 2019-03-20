@@ -15,12 +15,17 @@
     }
 
     h2 {
-        margin: 8% 0;
+        margin-top: 20%;
+        margin-bottom: 10%;
         position: relative;
     
         &:before {
             @include accent-line(1.5rem);
         }
+    }
+
+    h3 {
+        margin-top: 10%;
     }
 
     .project_textContainer {
@@ -35,28 +40,28 @@
             font-size: 0.825rem;
         }
 
-        .link {
-            position: relative;
-            transition: all 0.25s; 
-        }
+        // .link {
+        //     position: relative;
+        //     transition: all 0.25s; 
+        // }
         
-        .link:after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 1px;
-            bottom: 0;
-            left: 0;
-            background-color: $accent-color;
-        }
+        // .link:after {
+        //     content: '';
+        //     position: absolute;
+        //     width: 100%;
+        //     height: 1px;
+        //     bottom: 0;
+        //     left: 0;
+        //     background-color: $accent-color;
+        // }
         
-        .link:hover {
-            color: $accent-color;
-        }
+        // .link:hover {
+        //     color: $accent-color;
+        // }
         
-        .link:hover::after {
-            background-color: transparent;
-        }
+        // .link:hover::after {
+        //     background-color: transparent;
+        // }
 
     }
 }

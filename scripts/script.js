@@ -1,4 +1,23 @@
 $(document).ready(function () {
+
+    //fixed header after scrolling past the header
+    $(window).on('scroll', () => {
+        if($(this).scrollTop() >= $(window).height() - $('nav').height() ){
+            $('nav').removeClass('nav_absolute').addClass('nav_fixed');
+        } else { 
+            $('nav').removeClass('nav_fixed').addClass('nav_absolute');
+        }
+    })
+
+    $(window).on('scroll', () => {
+        if($(this).scrollTop() > 0){
+            // $('nav').css({
+            //     'box-shadow': '0 5px 5px 0.6'
+            // });
+            $('nav').addClass('nav_scrolled');
+        }
+    })
+
     AOS.init({
         duration: 1500,
         once: true,
