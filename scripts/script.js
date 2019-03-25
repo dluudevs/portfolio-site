@@ -22,7 +22,7 @@ const toggleMobileMenu = () => {
     $('.hamburger').on('click', () => {
 
         //animate transition to X on click
-        $(this).toggleClass('is_active');
+        $('.hamburger').toggleClass('is_active');
         
         //animation for hamburger menu
         if (!$('.nav_list').hasClass('nav_mobile')) {
@@ -69,6 +69,7 @@ const checkMobile = () => {
 
     var mobile = window.matchMedia('(min-width: 1023px)');
 
+    //remove animate on scroll when not in mobile
     if (mobile.matches){
         $('.fade__left').attr('data-aos', 'fade-left');
         $('.fade__down').attr('data-aos', 'fade-down');
@@ -80,6 +81,11 @@ const checkMobile = () => {
 
     } else {
         $('[data-aos]').removeAttr('data-aos');
+    }
+
+    //remove the styling from closing nav bar - otherwise after clicking the hamburger and moving to desktop, the nav is placed off screen
+    if(mobile.matches){
+       $('.nav_list').removeAttr('style');
     }
 }
 //this works, but not on document load

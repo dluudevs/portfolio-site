@@ -1,9 +1,9 @@
 .hamburger {
 display: inline-block;
 cursor: pointer;
-// transition-property: background-color, filter;
-// transition-duration: 0.5s;
-// transition-timing-function: linear;
+transition-property: background-color, filter;
+transition-duration: 0.5s;
+transition-timing-function: linear;
 font: inherit;
 color: inherit;
 text-transform: none;
@@ -19,6 +19,7 @@ overflow: visible; }
 .hamburger.is_active .hamburger_inner::before,
 .hamburger.is_active .hamburger_inner::after {
     background-color: $text-color; }
+    
 
 .hamburger_box {
 width: 25px;

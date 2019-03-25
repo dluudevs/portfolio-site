@@ -1,8 +1,5 @@
 //Variables
 
-//TODO: scalability for wrapper up to 1600
-//bottom space in hero image
-
 $accent-color: #ff4757;
 $hero-text-color: #ffffff;
 $text-color: #9e9c9c;
@@ -137,17 +134,4 @@ button {
         margin-top: 10%;
         margin-bottom: 5%;
     };
-}
-
-@media (min-width: 1400px){
-    html {
-        font-size: 150%;
-    }
-}
-
-@media (min-width: 1919px){
-
-    html {
-        font-size: 170%;
-    }
 }

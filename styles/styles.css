@@ -239,14 +239,6 @@ button {
     margin-top: 10%;
     margin-bottom: 5%; } }
 
-@media (min-width: 1400px) {
-  html {
-    font-size: 150%; } }
-
-@media (min-width: 1919px) {
-  html {
-    font-size: 170%; } }
-
 /*!
  * Hover.css (http://ianlunn.github.io/Hover/)
  * Version: 2.3.2
@@ -4542,7 +4534,8 @@ nav {
   box-shadow: 0px 2px 2px rgba(168, 168, 168, 0.3); }
 
 .nav_list {
-  z-index: 10; }
+  z-index: 10;
+  position: relative; }
 
 .nav_list li {
   display: none;
@@ -4587,11 +4580,11 @@ nav {
   background-color: #ff4757; }
 
 .fullbleed {
-  height: 97.5vh;
+  height: 96vh;
   background-image: url("../assets/ales-nesetril-734016-unsplash.jpg");
   background-size: cover;
   background-position-x: 17.8%;
-  margin-bottom: 2.5vh; }
+  margin-bottom: 4vh; }
 
 .fullbleed::before {
   content: '';
@@ -4692,7 +4685,9 @@ nav {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 50%; }
+    padding-left: 0;
+    -ms-flex-preferred-size: 45%;
+    flex-basis: 45%; }
   .nav_list li {
     display: block;
     border: none; }
@@ -4700,12 +4695,24 @@ nav {
     display: none; } }
 
 @media (min-width: 1400px) {
-  .intro {
-    max-width: 650px; } }
+  .nav_list {
+    -ms-flex-preferred-size: 35%;
+    flex-basis: 35%; } }
 
 .hamburger {
   display: inline-block;
   cursor: pointer;
+  -webkit-transition-property: background-color, -webkit-filter;
+  transition-property: background-color, -webkit-filter;
+  -o-transition-property: background-color, filter;
+  transition-property: background-color, filter;
+  transition-property: background-color, filter, -webkit-filter;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
   font: inherit;
   color: inherit;
   text-transform: none;
@@ -4816,9 +4823,6 @@ nav {
     display: block;
     background-color: #ff4757; }
 
-.about_text {
-  padding-top: 2.5vh; }
-
 .about_text p:first-of-type {
   margin-top: 12.5%; }
 
@@ -4838,7 +4842,7 @@ nav {
 
 .button_cv {
   margin: 10% auto 0 auto;
-  width: 30%;
+  min-width: 30%;
   -webkit-box-shadow: 0 2px 2px rgba(168, 168, 168, 0.6);
   box-shadow: 0 2px 2px rgba(168, 168, 168, 0.6); }
 
@@ -4855,8 +4859,8 @@ nav {
     justify-content: space-between; }
   .about_pic {
     border-radius: 10px;
-    -ms-flex-preferred-size: 35%;
-    flex-basis: 35%;
+    -ms-flex-preferred-size: 30%;
+    flex-basis: 30%;
     height: 100%;
     margin: 0; }
   .about_text {
@@ -4940,16 +4944,6 @@ nav {
   .skill_icon .firebase {
     max-width: 82px;
     max-height: 82px; } }
-
-@media (min-width: 1400px) {
-  .skill_icon .firebase {
-    max-width: 102px;
-    max-height: 102px; } }
-
-@media (min-width: 1919px) {
-  .skill_icon .firebase {
-    max-width: 116px;
-    max-height: 116px; } }
 
 .portfolio h2 {
   position: relative; }
@@ -5148,8 +5142,6 @@ form {
     flex-basis: 202px; } }
 
 @media (min-width: 1023px) {
-  .email_link {
-    margin-top: 5%; }
   .contact .contact_container {
     display: -webkit-box;
     display: -ms-flexbox;

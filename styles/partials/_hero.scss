@@ -34,6 +34,7 @@ nav {
 
 .nav_list {
     z-index: 10;
+    position: relative;
 }
 
 .nav_list li {
@@ -46,7 +47,7 @@ nav {
     color: $accent-color;
 }
 
-//toggle nav bar
+//toggle mobile nav bar
 .nav_mobile {
     padding-left: 0;
     width: 52.5vw;
@@ -86,11 +87,11 @@ nav {
 
 
 .fullbleed {
-    height: 97.5vh;
+    height: 96vh;
     background-image: url('../assets/ales-nesetril-734016-unsplash.jpg');
     background-size: cover;
     background-position-x: 17.8%;
-    margin-bottom: 2.5vh;
+    margin-bottom: 4vh;
 }
 
 .fullbleed::before {
@@ -195,9 +196,10 @@ nav {
     .nav_list {
         display: flex;
         justify-content: space-between;
-        width: 50%;
+        padding-left: 0;
+        flex-basis: 45%;
     }
-
+    
     .nav_list li {
         display: block;
         border: none;
@@ -210,7 +212,8 @@ nav {
 }
 
 @media (min-width: 1400px){
-    .intro {
-        max-width: 650px;
+
+    .nav_list {
+        flex-basis: 35%;
     }
 }
