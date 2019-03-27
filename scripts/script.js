@@ -1,20 +1,18 @@
 $(document).ready( () => {
 
-    listenMobile();
+    checkMobile();
     toggleMobileMenu();
     scrollThenFixed();
 
     AOS.init({
         duration: 1500,
-        once: true,
+        once: true
     });
 
     $('a').smoothScroll({
         easing: 'swing',
         speed: 1250
     });
-
-
 });
 
 const toggleMobileMenu = () => {
@@ -69,27 +67,21 @@ const checkMobile = () => {
 
     var mobile = window.matchMedia('(min-width: 1023px)');
 
-    //remove animate on scroll when not in mobile
-    if (mobile.matches){
+    if (mobile.matches) {
+        //remove the styling from closing nav bar - otherwise after clicking the hamburger and moving to desktop, the nav is placed off screen
+        $('.nav_list').removeAttr('style');
+
+        //if user suddenly switches to desktop mode after opening hamburger menu, the below handles the error
+        $('.hamburger').removeClass('is_active');
+        $('.nav_list').removeClass('nav_mobile');
+        
+        //include AOS when in desktop mode
         $('.fade__left').attr('data-aos', 'fade-left');
         $('.fade__down').attr('data-aos', 'fade-down');
         $('.fade__up').attr('data-aos', 'fade-up');
-        AOS.init({
-            duration: 1500,
-            once: true,
-        });
-
     } else {
+
+        //if page loads in mobile mode, remove aos 
         $('[data-aos]').removeAttr('data-aos');
     }
-
-    //remove the styling from closing nav bar - otherwise after clicking the hamburger and moving to desktop, the nav is placed off screen
-    if(mobile.matches){
-       $('.nav_list').removeAttr('style');
-    }
-}
-//this works, but not on document load
-
-const listenMobile = () => {
-    window.addEventListener('resize', checkMobile, false);
 }
