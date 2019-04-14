@@ -5214,27 +5214,35 @@ footer {
   footer {
     margin-top: 9%; } }
 
-#thanks {
+#thanks h2 {
+  color: #fff; }
+
+#thanks .link_home {
+  position: relative;
+  z-index: 20;
+  -webkit-transition: color 0.25s, border 0.25s;
+  -o-transition: color 0.25s, border 0.25s;
+  transition: color 0.25s, border 0.25s; }
+
+#thanks .link_home:hover .back {
+  color: #ff4757; }
+
+#thanks .link_home:hover .back_text {
+  border-bottom: 1px solid #ff4757; }
+
+#thanks .back {
+  margin-right: 1.25%; }
+
+#thanks .back_text {
+  padding-bottom: 0.125rem;
+  border-bottom: 1px solid transparent; }
+
+.thanks_fullbleed {
+  height: 100vh;
   background-image: url("../assets/ales-nesetril-734016-unsplash.jpg");
   background-size: cover;
-  background-position-y: 15%; }
-  #thanks h2 {
-    color: #fff; }
-  #thanks .link_home {
-    position: relative;
-    z-index: 20;
-    -webkit-transition: color 0.25s, border 0.25s;
-    -o-transition: color 0.25s, border 0.25s;
-    transition: color 0.25s, border 0.25s; }
-  #thanks .link_home:hover .back {
-    color: #ff4757; }
-  #thanks .link_home:hover .back_text {
-    border-bottom: 1px solid #ff4757; }
-  #thanks .back {
-    margin-right: 1.25%; }
-  #thanks .back_text {
-    padding-bottom: 0.125rem;
-    border-bottom: 1px solid transparent; }
+  background-position-x: 45%;
+  background-position-y: 6vh; }
 
 .thanks_fullbleed::before {
   content: '';
@@ -5247,6 +5255,11 @@ footer {
   background: rgba(158, 156, 156, 0.2); }
 
 .thanks_container {
-  padding-top: 10vh; }
+  padding-top: 10vh;
+  text-align: center; }
+
+@media (min-width: 970px) {
+  .thanks_fullbleed {
+    background-position-y: -8vh; } }
 
 /*# sourceMappingURL=styles.css.map */
