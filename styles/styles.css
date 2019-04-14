@@ -5238,11 +5238,13 @@ footer {
   border-bottom: 1px solid transparent; }
 
 .thanks_fullbleed {
-  height: 100vh;
+  margin-top: 8vh;
+  height: 88vh;
+  margin-bottom: 4vh;
   background-image: url("../assets/ales-nesetril-734016-unsplash.jpg");
   background-size: cover;
   background-position-x: 45%;
-  background-position-y: 6vh; }
+  background-position-y: 10vh; }
 
 .thanks_fullbleed::before {
   content: '';
@@ -5255,11 +5257,11 @@ footer {
   background: rgba(158, 156, 156, 0.2); }
 
 .thanks_container {
-  padding-top: 10vh;
+  padding-top: 5vh;
   text-align: center; }
 
 @media (min-width: 970px) {
   .thanks_fullbleed {
-    background-position-y: -8vh; } }
+    background-position-y: -15vh; } }
 
 /*# sourceMappingURL=styles.css.map */
