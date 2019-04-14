@@ -5243,8 +5243,8 @@ footer {
   margin-bottom: 4vh;
   background-image: url("../assets/ales-nesetril-734016-unsplash.jpg");
   background-size: cover;
-  background-position-x: 45%;
-  background-position-y: 10vh; }
+  background-position-x: 47.5%;
+  background-position-y: 40px; }
 
 .thanks_fullbleed::before {
   content: '';
@@ -5253,6 +5253,8 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
+  margin-top: 8vh;
+  height: 88vh;
   z-index: 10;
   background: rgba(158, 156, 156, 0.2); }
 
