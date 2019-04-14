@@ -6,7 +6,7 @@ $(document).ready( () => {
 
     AOS.init({
         duration: 1500,
-        once: false
+        once: true
     });
 
     $('a').smoothScroll({

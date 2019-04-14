@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="html" href="thankyou.html">
 
 </head>
 <body>
@@ -52,7 +53,7 @@
                     <div class="about_text">
                         <p>Hi! I'm <span class="accent-font">Derek</span>, a web developer from Toronto, Ontario. After picking up coding as a hobby I fell deeply in love with solving intricate problems in the digital realm.</p>
                         <p>When I am not learning new code, I enjoy reading, trying new recipes and hanging out with friends. I am also the proud owner of a very outspoken chihuahua!</p>
-                        <a target="_blank" href="http://derekluudevs.com/derekluu-resume.pdf"><button class="button button_cv">Download CV</button></a>
+                        <a target="_blank" href="http://derekluudevs.com/derek-luu-resume.pdf"><button class="button button_cv">Download CV</button></a>
                     </div>
                 </div>
             </div>
@@ -100,7 +101,7 @@
                 <div class="project1 project_container">
                     <div class="project_container_top project_textContainer fade__down"  data-aos="fade-down">
                         <h3>Lit Tracker</h3>
-                        <p>Built with React, this app allows you to create your very own book list. Sort your books by ratings, mark them as read or look at other people's list for inspiration!</p>
+                        <p>A collaborative project built with React, this app allows you to create your very own book list. Sort your books by ratings, mark them as read or look at other people's list for inspiration!</p>
                         <p>HTML<span>/</span>CSS<span>/</span>Responsive Design<span>/</span>Javascript<span>/</span>React<span>/</span>Firebase<span>/</span>Github</p>
                     </div>
                     <div class="project_container_bottom fade__up" data-aos="fade-up">
@@ -117,7 +118,9 @@
                 <div class="project2 project_container">
                     <div class="project_container_top project_textContainer fade__down" data-aos="fade-down">
                         <h3>ShouldIGetIt</h3>
-                        <p>Inspired by <a class="link" href="https://isthereanydeal.com/" target="_blank">isthereanydeal</a> this app allows users to quickly search a video game they're interested in to assist with their purchasing decisions.</p>
+                        <!-- <p>Inspired by <a class="link" href="https://isthereanydeal.com/" target="_blank">isthereanydeal</a>, this app was built with React and makes use of Gamespot's RESTful API. ShouldIGetIt allows users to quickly search a video game they're interested in to assist with their purchasing decisions.</p> -->
+
+                        <p>Made with React and utilizing Gamespot's RESTful API, this app allows users to quickly search a video game they're intrested in to assist with their purchasing decisions.</p>
                         <p>HTML<span>/</span>CSS<span>/</span>Responsive
                         Design<span>/</span>Javascript<span>/</span>React<span>/</span>Github</p>
                     </div>
@@ -137,7 +140,7 @@
                         <h3>Beachstay</h3>
                         <p>A reponsive multi-page PSD conversion, a desktop design was used as a reference. Mobile design was subject to one's interpretation of the overall design.</p>
                         <p>HTML<span>/</span>CSS<span>/</span>Responsive
-                        Design</p>
+                        Design<span>/</span>Jquery</p>
                     </div>
                     <div class="project_container_bottom fade__down" data-aos="fade-down">
                         <div class="project_imgContainer">
@@ -156,7 +159,7 @@
         <section id="contact" class="contact">
             <div class="wrapper">
                 <h2>Contact</h2>
-                <form action="http://www.focuspocus.io/magic/derekluu90@gmail.com" method="POST">
+                    <form action="http://www.focuspocus.io/magic/derekluu90@gmail.com" method="POST">
                     <div class="form_top">
                         <label class="visuallyhidden" for="name">Name:</label>
                         <input required type="text" id="name" placeholder="Name" name="name">
@@ -169,26 +172,32 @@
                     <div class="form_bottom fade__up" data-aos="fade-up">
                         <p class="email_link hvr-underline-from-center"><a href="mailto:hello@derekluudevs.com">hello@derekluudevs.com</a>
                         </p>
+
                         <div class="contact_icons">
-                            
                             <div class="contact_container">
-                                <div class="contact_link contact_linkedin">
-                                    <a href="https://www.linkedin.com/in/derekluu/"><i class="fab fa-linkedin"></i></a>
-                                    <p>linkedin.com/derekluu</p>
-                                </div>
+                                <a href="https://www.linkedin.com/in/derekluu/" target="_blank">
+                                    <div class="contact_link contact_linkedin">
+                                        <i class="fab fa-linkedin"></i>
+                                        <p>linkedin.com/derekluu</p>
+                                    </div>
+                                </a>
 
-                                <div class="contact_link contact_github">
-                                    <a href="https://github.com/dluudevs"><i class="fab fa-github"></i></a>
-                                    <p>github.com/dluudevs</p>
-                                </div>
+                                <a href="https://twitter.com/dluudevs" target="_blank">
+                                    <div class="contact_link contact_twitter">
+                                        <i class="fab fa-twitter"></i>
+                                        <p>twitter.com/dluudevs</p>
+                                    </div>
+                                </a>
 
-                                <div class="contact_link contact_twitter">
-                                    <a href="https://twitter.com/dluudevs"><i class="fab fa-twitter"></i></a>
-                                    <p>twitter.com/dluudevs</p>
-                                </div>
+                                <a href="https://medium.com/@dluudevs" target="_blank">
+                                    <div class="contact_link contact_medium">
+                                        <i class="fab fa-medium"></i>
+                                        <p>medium.com/dluudevs</p>
+                                    </div>
+                                </a>
                             </div>
-
                         </div>
+
                     </div>
                 </form>
             </div>

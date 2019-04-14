@@ -145,17 +145,24 @@ form {
         }
     }
 
+
+
     form {
         display: flex;
         justify-content: space-between;
 
 
         .contact_icons p {
-            padding-left: 2.5%;
+            padding-left: 0.75rem;
             display: inline-block;
             font-size: 0.7rem;
             letter-spacing: 0.05rem;
         }
+
+        .contact_twitter p {
+            padding-left: 0.625rem;
+        }
+
     }
 
     .contact form button {
