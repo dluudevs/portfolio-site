@@ -7,7 +7,7 @@ $(document).ready( () => {
     AOS.init({
         duration: 1500,
         once: true,
-        disable: 'mobile'
+        disable: disableAOS()
     });
 
     $('a').smoothScroll({
@@ -15,18 +15,9 @@ $(document).ready( () => {
         speed: 1250
     });
 
-
 });
 
-const listenMobile = () => {
-    const mobile = window.matchMedia('(max-width: 1023px');
-    //disable AOS in mobile
-    return mobile.matches ? true : false
-}
-
-const disableAOS = () => {
-    window.addEventListener('resize', listenMobile);
-}
+const disableAOS = () => 'mobile' || 'phone' || 'tablet'
 
 const toggleMobileMenu = () => {
 
