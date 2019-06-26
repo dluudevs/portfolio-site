@@ -76,7 +76,12 @@ button {
     transition: all 0.25s
 }
 
-.button:hover {
+button:focus {
+    outline: none;
+}
+
+.button:hover,
+.button:focus {
     border: 1px solid $accent-color;
     background-color: #fff;
     color: $accent-color;

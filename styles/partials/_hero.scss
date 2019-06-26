@@ -114,6 +114,7 @@ nav {
 .intro {
     color: #fff;
     text-align: center;
+    max-width: 337px;
 }
 
 .intro h1 {
@@ -150,7 +151,7 @@ nav {
     background-color: $accent-color;
     position: absolute;
     bottom: 40%;
-    margin-left: 2.5%;
+    margin-left: 10px;
 }
 
 .dev-life {
@@ -167,7 +168,7 @@ nav {
     width: 20px;
     background-color: $accent-color;
     position: absolute;
-    margin-left: -10.5%;
+    margin-left: -35px;
     bottom: 40%;
 }
 
@@ -184,7 +185,6 @@ nav {
     .intro {
         max-width: 440px;
     }
-
 
     .nav_wrapper {
         height: 100%;

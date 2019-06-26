@@ -1,12 +1,13 @@
 $(document).ready( () => {
 
-    checkMobile();
+    listenDesktop();
     toggleMobileMenu();
     scrollThenFixed();
 
     AOS.init({
         duration: 1500,
-        once: true
+        once: true,
+        disable: 'mobile'
     });
 
     $('a').smoothScroll({
@@ -16,6 +17,16 @@ $(document).ready( () => {
 
 
 });
+
+const listenMobile = () => {
+    const mobile = window.matchMedia('(max-width: 1023px');
+    //disable AOS in mobile
+    return mobile.matches ? true : false
+}
+
+const disableAOS = () => {
+    window.addEventListener('resize', listenMobile);
+}
 
 const toggleMobileMenu = () => {
 
@@ -65,47 +76,16 @@ const scrollThenFixed = () => {
     })
 }
 
-const removeMobile = () => {
-
-    var mobile = window.matchMedia('(min-width: 1023px)');
-
-    if (mobile.matches){
-        //remove animate on scroll when not in mobile
-        $('.fade__left').attr('data-aos', 'fade-left');
-        $('.fade__down').attr('data-aos', 'fade-down');
-        $('.fade__up').attr('data-aos', 'fade-up');
-
+const removeHamburger = () => {
+    const desktop = window.matchMedia('(min-width: 1023px');
+    if(desktop.matches){
         //remove the styling from closing nav bar - otherwise after clicking the hamburger and moving to desktop, the nav is placed off screen
         $('.nav_list').removeAttr('style');
-        //if user suddenly switches to desktop mode after opening hamburger menu, the below handles the error
-         $('.hamburger').removeClass('is_active');
-         $('.nav_list').removeClass('nav_mobile');
-    } else {
-        $('[data-aos]').removeAttr('data-aos');
     }
 }
 
-const listenMobile = () => {
-    window.addEventListener('resize', removeMobile, false);
+const listenDesktop = () => {
+    window.addEventListener('resize', removeHamburger, false);
 }
 
-const checkMobile = () => {
-    //on document load check if user opened in mobile, if true remove the aos. if not, add them back
 
-    listenMobile();
-
-    var mobile = window.matchMedia('(min-width: 1023px)');
-
-    if (mobile.matches) {
-
-        //include AOS when in desktop
-        $('.fade__left').attr('data-aos', 'fade-left');
-        $('.fade__down').attr('data-aos', 'fade-down');
-        $('.fade__up').attr('data-aos', 'fade-up');
-
-    } else {
-        //if page loads in mobile mode, remove aos 
-        $('[data-aos]').removeAttr('data-aos');
-    }
-
-}

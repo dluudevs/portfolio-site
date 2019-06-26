@@ -1,0 +1,69 @@
+#thanks {
+
+    h2 {
+        color: #fff;
+    }
+    
+    .link_home {
+        position: relative;
+        z-index: 20;
+        transition: color 0.25s,
+                    border 0.25s;
+                
+    }
+    .link_home:hover {
+
+        .back {
+            color: $accent-color;
+        }
+
+        .back_text {
+            border-bottom: 1px solid $accent-color;
+        }
+
+    }
+
+    .back {
+        margin-right: 1.25%;
+        // color: $accent-color;
+    }
+
+    .back_text {
+        padding-bottom: 0.125rem;
+        border-bottom: 1px solid transparent;
+    }
+}
+
+.thanks_fullbleed {
+    margin-top: 8vh;
+    height: 88vh;
+    margin-bottom: 4vh;
+    background-image: url('../assets/ales-nesetril-734016-unsplash.jpg');
+    background-size: cover;
+    background-position-x: 47.5%;
+    background-position-y: 40px;
+}
+
+.thanks_fullbleed::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 8vh;
+    height: 88vh;
+    z-index: 10;
+    background: rgba(158, 156, 156, 0.2);
+}
+
+.thanks_container {
+    padding-top: 5vh;
+    text-align: center;
+}
+
+@media (min-width: 970px){
+    .thanks_fullbleed {
+        background-position-y: -15vh;
+    }
+}

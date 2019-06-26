@@ -47,6 +47,7 @@ form {
 
     input:focus, textarea:focus{
         border-color: $accent-color;
+        outline: none;
     }
 
     input::placeholder,
