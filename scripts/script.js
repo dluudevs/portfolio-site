@@ -10,7 +10,7 @@ $(document).ready( () => {
         disable: disableAOS()
     });
 
-    $('a').smoothScroll({
+    $('nav a').smoothScroll({
         easing: 'swing',
         speed: 1250
     });

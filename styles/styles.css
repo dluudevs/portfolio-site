@@ -4707,11 +4707,11 @@ nav {
 .hamburger {
   display: inline-block;
   cursor: pointer;
-  -webkit-transition-property: background-color, -webkit-filter;
-  transition-property: background-color, -webkit-filter;
-  -o-transition-property: background-color, filter;
-  transition-property: background-color, filter;
-  transition-property: background-color, filter, -webkit-filter;
+  -webkit-transition-property: -webkit-filter;
+  transition-property: -webkit-filter;
+  -o-transition-property: filter;
+  transition-property: filter;
+  transition-property: filter, -webkit-filter;
   -webkit-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
@@ -4719,7 +4719,7 @@ nav {
   -o-transition-timing-function: linear;
   transition-timing-function: linear;
   font: inherit;
-  color: inherit;
+  color: #9e9c9c;
   text-transform: none;
   background-color: transparent;
   border: 0;
