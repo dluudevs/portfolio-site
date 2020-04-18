@@ -10,7 +10,7 @@ $secondary-color: #a8a8a8;
     box-shadow: $x $y $spread rgba(168, 168, 168, $alpha);
 }
 
-@mixin accent-line ($width){
+@mixin accent-line ($width){    
     content: '';
     position: absolute;
     bottom: 0;

@@ -12,7 +12,8 @@ $(document).ready( () => {
 
     $('nav a').smoothScroll({
         easing: 'swing',
-        speed: 1250
+        speed: 1000,
+        speedAsDuration: true
     });
 
 });
@@ -21,27 +22,34 @@ const disableAOS = () => 'mobile' || 'phone' || 'tablet'
 
 const toggleMobileMenu = () => {
 
-    $('.hamburger').on('click', () => {
+    $('.hamburger').on('click', () => {      
+        // variable declaration  
+        const isHamburgerActive = $(".hamburger").hasClass("is_active");
+        const isMobileNav = $(".nav_list").hasClass("nav_mobile");
+        const closeMobileNav = (callback) => (
+            $(".nav_mobile").transition(
+            { x: "190%", opacity: 0 },
+            500,
+            () => {
+                $(".nav_list").removeClass("nav_mobile")
+                typeof callback === 'function' && callback()
+            })
+        )
+        const toggleHamburger = () => $(".hamburger").toggleClass("is_active");
 
-        //animate transition to X on click
-        $('.hamburger').toggleClass('is_active');
-        
-        //animation for hamburger menu
-        if (!$('.nav_list').hasClass('nav_mobile')) {
+        if (!isMobileNav && !isHamburgerActive) {
             $('.nav_list').addClass('nav_mobile');
             $('.nav_mobile').transition({ x: '92.5%', opacity: 1 }, 500);
-        } else if ($('.nav_list').hasClass('nav_mobile')) {
-            $('.nav_mobile').transition({ x: '190%', opacity: 0 }, 500, () => {
-                $('.nav_list').removeClass('nav_mobile');
-            });
-        }
+            toggleHamburger();
+
+        } else if (isMobileNav && isHamburgerActive) {
+            closeMobileNav();
+            toggleHamburger();
+        }   
 
         //switch to hamburger after clicking a link in the menu
         $('.nav_list a').on('click', () => {
-            $('.hamburger').removeClass('is_active');
-            $('.nav_mobile').transition({ x: '190%', opacity: 0 }, 500, () => {
-                $('.nav_list').removeClass('nav_mobile');
-            });
+            closeMobileNav(() => $(".hamburger").removeClass("is_active"));
         })
     })
 }
