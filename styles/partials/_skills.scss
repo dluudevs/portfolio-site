@@ -13,79 +13,89 @@
     justify-content: space-between;
 }
 
-.skill_icon {
-
+.skill_icon_container {
     list-style: none;
-    flex-basis: 20%;
-    margin-bottom: 10%;
-    margin-right: 10%;
-    font-size: 3.25rem;
+    flex-basis: 50%;
+    margin-bottom: 5%;
+    // margin-right: 10%;
     display: flex;
-
+    align-items: center;
+    font-size: 0.7rem;
+    
     .icon {
         color: $accent-color;
     }
-    
-    .firebase {
-        max-width: 52px;
-        max-height: 52px;
+
+    &:nth-child(1n + 11){
+        margin-bottom: 0;
     }
 
+    &:nth-child(2n){
+        padding-left: 20px;
+    }
 }
 
-.skill_icon:nth-child(3n + 3){
-    margin-right: 0;
+.skill_icon {
+    font-size: 1.5rem;
+
+    .fas {
+        font-size: 1.2rem;
+    }
 }
 
-.skill_icon:nth-child(n + 7){
-    margin-bottom: 0;
+.skill_text {
+    padding-left: 4.5px;
+
+    &.mongo {
+        padding-left: 0px;
+    }
+}
+
+@media (min-width: 400px){
+    .skill_icon_container {
+        flex-basis: calc(100% / 3);
+
+        &:nth-child(2n){
+            padding-left: 0px;
+        }
+
+        &:nth-child(1n + 10){
+            margin-bottom: 0;
+        }
+    }
 }
 
 @media (min-width: 709px){
 
-    .skill_icon {
-        font-size: 4.25rem;
+    .skill_icon_container {
+        height: 29px;
+        flex-basis: 25%;
     }
 
-    .skill_icon .firebase {
-        max-width: 77px;
-        max-height: 77px;
+    .skill_icon {
+        font-size: 1.5rem;
+
+        .fas {
+            font-size: 1.2rem;
+        }
     }
 
     .skill_container {
         justify-content: space-evenly;
     }
 
-    .skill_icon {
+    .skill_icon_container {
         margin-right: 0;
-        justify-content: center;
     }
 
-    .skill_icon:nth-child(6){
+    .skill_icon_container:nth-child(1n + 9){
         margin-bottom: 0;
     }
 
-}
-
-@media (min-width: 1023px){
-    .skill_icon .firebase {
-        max-width: 82px;
-        max-height: 82px;
+    .skill_text {
+        padding-left: 9px;
     }
 }
 
-// @media (min-width: 1400px){
-//     .skill_icon .firebase {
-//         max-width: 102px;
-//         max-height: 102px;
-//     }
-// }
-
-// @media (min-width: 1919px){
-//     .skill_icon .firebase {
-//         max-width: 116px;
-//         max-height: 116px;
-//     }
-// }
 
 
