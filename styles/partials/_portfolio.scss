@@ -65,11 +65,17 @@
 
 .project2 {
     .project_imgContainer {
-        @include box-shadow(0px, 0px, 15px, 0.6);
+        @include box-shadow (0px, 0px, 10px, 0.6);
     }
 }
 
 .project3 {
+    .project_imgContainer {
+        @include box-shadow(0px, 0px, 15px, 0.6);
+    }
+}
+
+.project4 {
     .project_imgContainer {
         @include box-shadow (0px, 0px, 15px, 0.8);
     }
@@ -98,7 +104,7 @@
         margin-bottom: 4%;
     }
 
-    .project2 {
+    .project2, .project4 {
         flex-direction: row;
     }
 
@@ -106,7 +112,7 @@
         flex-basis: 45%;
     }
 
-    .project3 {
+    .project4 {
         margin-bottom: 0;
     }
 }

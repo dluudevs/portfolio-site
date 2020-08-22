@@ -5636,12 +5636,6 @@ nav {
     font-size: 1.2rem;
   }
 
-  .skill_container {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-
   .skill_icon_container {
     margin-right: 0;
   }
@@ -5705,11 +5699,16 @@ nav {
 }
 
 .project2 .project_imgContainer {
+  -webkit-box-shadow: 0px 0px 10px rgba(168, 168, 168, 0.6);
+          box-shadow: 0px 0px 10px rgba(168, 168, 168, 0.6);
+}
+
+.project3 .project_imgContainer {
   -webkit-box-shadow: 0px 0px 15px rgba(168, 168, 168, 0.6);
           box-shadow: 0px 0px 15px rgba(168, 168, 168, 0.6);
 }
 
-.project3 .project_imgContainer {
+.project4 .project_imgContainer {
   -webkit-box-shadow: 0px 0px 15px rgba(168, 168, 168, 0.8);
           box-shadow: 0px 0px 15px rgba(168, 168, 168, 0.8);
 }
@@ -5742,7 +5741,7 @@ nav {
     margin-bottom: 4%;
   }
 
-  .project2 {
+  .project2, .project4 {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -5754,7 +5753,7 @@ nav {
         flex-basis: 45%;
   }
 
-  .project3 {
+  .project4 {
     margin-bottom: 0;
   }
 }
